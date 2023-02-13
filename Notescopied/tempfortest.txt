@@ -1,0 +1,425 @@
+sitedata id : 
+datafile id : 631f6853e8a1d8345fec67cf
+master : 20  nature
+path : 
+
+
+sitedata id   
+
+dataID  
+masterID 
+DataFile
+"	_id": "631f6853e8a1d8345fec67cf",
+        "fileCaption": "Seminar Photo",
+        "fileCategory": "Seminar",
+        "fileMasterID": "20",
+        "fileDataID": "631f16eb9e1a9bf721fdcf62",
+        "fileName": "CentralUniversitySouthBihar.jpg",
+        "filePath": "uploads\\2022-09-12T17-11-47.827Z-CentralUniversitySouthBihar.jpg",
+        "fileType": "image/jpeg",
+        "fileSize": "385.21 KB",
+        "createdAt": "2022-09-12T17:11:47.838Z",
+        "updatedAt": "2022-09-12T17:11:47.838Z",
+        "__v": 0
+
+
+axios.delete('https://reqres.in/api/posts/1')
+        .then(() => this.setState({ status: 'Delete successful' }));
+
+ axios.delete('https://reqres.in/invalid-url')
+        .then(response => setStatus('Delete successful'))
+        .catch(error => {
+            setErrorMessage(error.message);
+            console.error('There was an error!', error);
+        });
+
+fetch(`${API}/category/${slug}`, {
+        method: 'DELETE',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`
+        }
+    })
+        .then(response => {
+            return response.json();
+        })
+        .catch(err => console.log(err));
+};
+
+
+
+
+
+
+
+
+
+
+, { required:(fieldRequired) }
+
+{ (editdata.length !==0 && fields) && (
+                        fields.forEach(field => setValue(field, editdata[field])));
+                    }
+
+
+{
+        "_id": "63105f6665843219e1267eed",
+        "menuName": "Home",
+        "hasSubMenu": true,
+        "isGroupSubMenu": false,
+        "subMenuGroup": "NoSubmenuGroup",
+        "order": 1,
+        "formCategory": "DashBoard",
+        "dataFieldForm": "DefaultForm",
+        "children": [
+            {
+                "_id": "63105f6665843219e1267ef2",
+                "menuName": "Events",
+                "hasSubMenu": false,
+                "isGroupSubMenu": false,
+                "subMenuGroup": "NoSubmenuGroup",
+                "order": 1,
+                "formCategory": "MultipleItems",
+                "dataFieldForm": "DefaultForm",
+                "parent": "63105f6665843219e1267eed",
+                "children": [],
+                "path": "63105f6665843219e1267eed#63105f6665843219e1267ef2",
+                "__v": 0,
+                "entryFormTitle": "Events"
+            },
+            {
+                "_id": "63105f6665843219e1267ef3",
+                "menuName": "Activities",
+                "hasSubMenu": true,
+                "isGroupSubMenu": false,
+                "subMenuGroup": "NoSubmenuGroup",
+                "order": 2,
+                "formCategory": "SingleItem",
+                "dataFieldForm": "DefaultForm",
+                "parent": "63105f6665843219e1267eed",
+                "children": [
+                    {
+                        "_id": "63105f6665843219e1267ef4",
+                        "menuName": "Ext. Activities",
+                        "hasSubMenu": false,
+                        "isGroupSubMenu": false,
+                        "subMenuGroup": "NoSubmenuGroup",
+                        "order": 1,
+                        "formCategory": "MultipleItems",
+                        "dataFieldForm": "DefaultForm",
+                        "parent": "63105f6665843219e1267ef3",
+                        "children": [],
+                        "path": "63105f6665843219e1267eed#63105f6665843219e1267ef3#63105f6665843219e1267ef4",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "63105f6665843219e1267ef5",
+                        "menuName": "Extra Curricular",
+                        "hasSubMenu": false,
+                        "isGroupSubMenu": false,
+                        "subMenuGroup": "NoSubmenuGroup",
+                        "order": 2,
+                        "formCategory": "MultipleItems",
+                        "dataFieldForm": "DefaultForm",
+                        "parent": "63105f6665843219e1267ef3",
+                        "children": [],
+                        "path": "63105f6665843219e1267eed#63105f6665843219e1267ef3#63105f6665843219e1267ef5",
+                        "__v": 0
+                    }
+                ],
+                "path": "63105f6665843219e1267eed#63105f6665843219e1267ef3",
+                "__v": 0
+            },
+            {
+                "_id": "63105f6665843219e1267ef6",
+                "menuName": "Message",
+                "hasSubMenu": false,
+                "isGroupSubMenu": false,
+                "subMenuGroup": "NoSubmenuGroup",
+                "order": 3,
+                "formCategory": "SingleItem",
+                "dataFieldForm": "DefaultForm",
+                "parent": "63105f6665843219e1267eed",
+                "children": [],
+                "path": "63105f6665843219e1267eed#63105f6665843219e1267ef6",
+                "__v": 0
+            }
+        ],
+        "path": "63105f6665843219e1267eed",
+        "__v": 0
+    },
+    {
+        "_id": "63105f6665843219e1267eee",
+        "menuName": "Departments",
+        "hasSubMenu": true,
+        "isGroupSubMenu": false,
+        "subMenuGroup": "NoSubmenuGroup",
+        "order": 2,
+        "formCategory": "SingleItem",
+        "dataFieldForm": "DefaultForm",
+        "children": [
+            {
+                "_id": "63105f6665843219e1267ef7",
+                "menuName": "English",
+                "hasSubMenu": true,
+                "isGroupSubMenu": false,
+                "subMenuGroup": "NoSubmenuGroup",
+                "order": 1,
+                "formCategory": "SingleItem",
+                "dataFieldForm": "DefaultForm",
+                "parent": "63105f6665843219e1267eee",
+                "children": [
+                    {
+                        "_id": "63105f6665843219e1267ef8",
+                        "menuName": "Profile",
+                        "hasSubMenu": false,
+                        "isGroupSubMenu": false,
+                        "subMenuGroup": "NoSubmenuGroup",
+                        "order": 1,
+                        "formCategory": "SingleItem",
+                        "dataFieldForm": "DefaultForm",
+                        "parent": "63105f6665843219e1267ef7",
+                        "children": [],
+                        "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7#63105f6665843219e1267ef8",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "63105f6665843219e1267ef9",
+                        "menuName": "Academics",
+                        "hasSubMenu": true,
+                        "isGroupSubMenu": false,
+                        "subMenuGroup": "NoSubmenuGroup",
+                        "order": 2,
+                        "formCategory": "SingleItem",
+                        "dataFieldForm": "DefaultForm",
+                        "parent": "63105f6665843219e1267ef7",
+                        "children": [
+                            {
+                                "_id": "63105f6665843219e1267efd",
+                                "menuName": "Cert. Courses",
+                                "hasSubMenu": false,
+                                "isGroupSubMenu": false,
+                                "subMenuGroup": "NoSubmenuGroup",
+                                "order": 1,
+                                "formCategory": "MultipleItems",
+                                "dataFieldForm": "DefaultForm",
+                                "parent": "63105f6665843219e1267ef9",
+                                "children": [],
+                                "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7#63105f6665843219e1267ef9#63105f6665843219e1267efd",
+                                "__v": 0
+                            },
+                            {
+                                "_id": "63105f6665843219e1267efb",
+                                "menuName": "UG Courses",
+                                "hasSubMenu": false,
+                                "isGroupSubMenu": false,
+                                "subMenuGroup": "NoSubmenuGroup",
+                                "order": 2,
+                                "formCategory": "MultipleItems",
+                                "dataFieldForm": "DefaultForm",
+                                "parent": "63105f6665843219e1267ef9",
+                                "children": [],
+                                "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7#63105f6665843219e1267ef9#63105f6665843219e1267efb",
+                                "__v": 0
+                            },
+                            {
+                                "_id": "63105f6665843219e1267efc",
+                                "menuName": "PG Courses",
+                                "hasSubMenu": false,
+                                "isGroupSubMenu": false,
+                                "subMenuGroup": "NoSubmenuGroup",
+                                "order": 3,
+                                "formCategory": "MultipleItems",
+                                "dataFieldForm": "DefaultForm",
+                                "parent": "63105f6665843219e1267ef9",
+                                "children": [],
+                                "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7#63105f6665843219e1267ef9#63105f6665843219e1267efc",
+                                "__v": 0
+                            }
+                        ],
+                        "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7#63105f6665843219e1267ef9",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "63105f6665843219e1267efa",
+                        "menuName": "Staff",
+                        "hasSubMenu": true,
+                        "isGroupSubMenu": false,
+                        "subMenuGroup": "NoSubmenuGroup",
+                        "order": 3,
+                        "formCategory": "SingleItem",
+                        "dataFieldForm": "DefaultForm",
+                        "parent": "63105f6665843219e1267ef7",
+                        "children": [
+                            {
+                                "_id": "63105f6665843219e1267efe",
+                                "menuName": "Teaching Staff",
+                                "hasSubMenu": false,
+                                "isGroupSubMenu": false,
+                                "subMenuGroup": "NoSubmenuGroup",
+                                "order": 1,
+                                "formCategory": "SingleItem",
+                                "dataFieldForm": "DefaultForm",
+                                "parent": "63105f6665843219e1267efa",
+                                "children": [],
+                                "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7#63105f6665843219e1267efa#63105f6665843219e1267efe",
+                                "__v": 0
+                            },
+                            {
+                                "_id": "63105f6665843219e1267eff",
+                                "menuName": "NT Staff",
+                                "hasSubMenu": false,
+                                "isGroupSubMenu": false,
+                                "subMenuGroup": "NoSubmenuGroup",
+                                "order": 2,
+                                "formCategory": "SingleItem",
+                                "dataFieldForm": "DefaultForm",
+                                "parent": "63105f6665843219e1267efa",
+                                "children": [],
+                                "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7#63105f6665843219e1267efa#63105f6665843219e1267eff",
+                                "__v": 0
+                            }
+                        ],
+                        "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7#63105f6665843219e1267efa",
+                        "__v": 0
+                    }
+                ],
+                "path": "63105f6665843219e1267eee#63105f6665843219e1267ef7",
+                "__v": 0
+            }
+        ],
+        "path": "63105f6665843219e1267eee",
+        "__v": 0
+    },
+    {
+        "_id": "63105f6665843219e1267ef1",
+        "menuName": "Contact Us",
+        "hasSubMenu": false,
+        "isGroupSubMenu": false,
+        "subMenuGroup": "NoSubmenuGroup",
+        "order": 3,
+        "formCategory": "MultipleItems",
+        "dataFieldForm": "General",
+        "children": [],
+        "path": "63105f6665843219e1267ef1",
+        "__v": 0,
+        "entryFormTitle": "Test45"
+    },
+    {
+        "_id": "63105f6665843219e1267ef0",
+        "menuName": "Clubs and Cells",
+        "hasSubMenu": true,
+        "isGroupSubMenu": false,
+        "subMenuGroup": "NoSubmenuGroup",
+        "order": 4,
+        "formCategory": "SingleItem",
+        "dataFieldForm": "DefaultForm",
+        "children": [
+            {
+                "_id": "63105f6665843219e1267f00",
+                "menuName": "Statutory Cells",
+                "hasSubMenu": false,
+                "isGroupSubMenu": false,
+                "subMenuGroup": "NoSubmenuGroup",
+                "order": 1,
+                "formCategory": "MultipleItems",
+                "dataFieldForm": "DefaultForm",
+                "parent": "63105f6665843219e1267ef0",
+                "children": [],
+                "path": "63105f6665843219e1267ef0#63105f6665843219e1267f00",
+                "__v": 0
+            },
+            {
+                "_id": "63105f6665843219e1267f01",
+                "menuName": "Nature Club",
+                "hasSubMenu": false,
+                "isGroupSubMenu": false,
+                "subMenuGroup": "NoSubmenuGroup",
+                "order": 2,
+                "formCategory": "MultipleItems",
+                "dataFieldForm": "DefaultForm",
+                "parent": "63105f6665843219e1267ef0",
+                "children": [],
+                "path": "63105f6665843219e1267ef0#63105f6665843219e1267f01",
+                "__v": 0
+            }
+        ],
+        "path": "63105f6665843219e1267ef0",
+        "__v": 0
+    },
+    {
+        "_id": "63105f6665843219e1267eef",
+        "menuName": "IQAC",
+        "hasSubMenu": false,
+        "isGroupSubMenu": false,
+        "subMenuGroup": "NoSubmenuGroup",
+        "order": 5,
+        "formCategory": "SingleItem",
+        "dataFieldForm": "DefaultForm",
+        "children": [],
+        "path": "63105f6665843219e1267eef",
+        "__v": 0
+    }
+]
+
+
+
+DEFAULT FORM ************************************************
+
+{
+    "formName": "General Single",
+    "formTag": "Single",
+    "fields": [
+        {
+            "fieldName": "title",
+            "label": "Caption",
+            "fieldType": "text",
+            "fieldRequired": true,
+            "placeHolder": "Caption",
+            "order": 1,
+            "_id": "63105c930f1dfbcb905dfb30",
+            "fieldOptions": []
+        },
+        {
+            "fieldName": "shortDesc",
+            "label": "Short Description",
+            "fieldType": "text",
+            "fieldRequired": false,
+            "placeHolder": "Short Description",
+            "order": 2,
+            "_id": "63105c930f1dfbcb905dfb31",
+            "fieldOptions": []
+        },
+        {
+            "fieldName": "description",
+            "label": "Description",
+            "fieldType": "quill",
+            "fieldRequired": false,
+            "placeHolder": "Enter details here",
+            "order": 3,
+            "_id": "63105c930f1dfbcb905dfb32",
+            "fieldOptions": []
+        },
+        {
+            "fieldName": "remarks",
+            "label": "Caption",
+            "fieldType": "text",
+            "fieldRequired": false,
+            "placeHolder": "Remarks",
+            "order": 6,
+            "_id": "63105c930f1dfbcb905dfb33",
+            "fieldOptions": []
+        }
+{
+            "fieldName": "order",
+            "label": "Caption",
+            "fieldType": "Number",
+            "fieldRequired": false,
+            "placeHolder": "Order",
+            "order": 6,
+            "_id": "63105c930f1dfbcb905dfb33",
+            "fieldOptions": []
+        }
+    ]
+}

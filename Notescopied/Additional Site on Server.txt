@@ -1,0 +1,71 @@
+var/www/
+
+
+createuser migafoor
+pw Amnalayan$#2022
+
+New VPS -  IP : 194.233.72.250	
+New VPS – username migafoor   PW  Amnalayan$#2022
+URL : http://194.233.72.250:7800/e6c6a2e9
+username: e8tgbqex
+password: f4e27316
+
+
+
+
+IP : 194.233.72.250	
+Pass : pqo0v9xP2xYl8we635d
+
+usermod -aG sudo migafoor
+adduser vivek sudo        #add user with sudo
+id migafoor 
+output : uid=1000(migafoor) gid=1000(migafoor) groups=1000(migafoor),27(sudo)
+sudo addgroup www
+sudo addgroup www-data
+sudo addgroup pm2
+sudo usermod -a -G www,www-data,root,pm2 migafoor
+
+sudo apt update
+sudo apt install nginx
+sudo ufw app list
+sudo ufw allow 'Nginx HTTP'
+sudo ufw status
+systemctl status nginx
+http://194.233.72.250   ******* nginx welcome page will appear
+
+
+sudo mkdir -p /var/www/guidancekerala.org/html
+sudo chown -R migafoor:www /var/www/guidancekerala.org/html
+sudo chmod -R 755 /var/www/guidancekerala.org
+sudo chown -R $USER:$USER /var/www/guidancekerala.org/html
+sudo chmod -R 755 /var/www/guidancekerala.org/html
+
+sudo chown -R www-data:www-data /var/www/guidancekerala.org/html
+
+
+migafoor:www
+
+sudo nano /var/www/guidancekerala.org/html/index.html  *****html to serve in domain
+
+sudo nano /etc/nginx/sites-available/guidncekerala.org      **********server block edit in sites available
+
+sudo nginx -t -c /etc/nginx/sites-available/guidancekerala.org
+sudo ln -s /etc/nginx/sites-available/guidancekerala.org /etc/nginx/sites-enabled/
+sudo nano /etc/nginx/nginx.conf
+sudo ln -s /etc/nginx/sites-available/guidancekerala.org.conf /etc/nginx/sites-enabled/guidancekerala.org.conf
+sudo echo -e "Test">> /etc/nginx/sites-available/guidancekerala.org
+
+sudo chown -R www-data:www-data /etc/nginx/sites-enabled
+sudo chown -R migafoor:www-data /etc/nginx/sites-enabled
+
+curl http://localhost:3000
+	include /etc/nginx/sites-enabled/*;
+
+Amnalayan@2008
+sudo passwd jerry ##
+/etc/passwd
+useradd -g www-data migafoor
+usermod -a -G www-data migafoor
+ls -l /var/www/guidancekerala.in/html
+
+sudo nano /var/www/guidancekerala.org/html/index.html  **

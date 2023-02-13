@@ -1,0 +1,18 @@
+getAllPeople()
+   .then(response => {          
+         this.setState(() => ({ people: response.data}));
+     })
+   .catch(error => { 
+         // your error handling goes here
+     }
+  } 
+
+
+ getAllPeople().then(response => {
+       // check if its actual response or error
+        if(error) this.setState(() => ({ error: response }));
+        else this.setState(() => ({ people: response}));
+    });
+  }
+
+

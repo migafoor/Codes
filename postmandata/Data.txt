@@ -1,0 +1,216 @@
+{
+    "name": "Admin Bishop Moore",
+    "email":"adminbishop@gmail.com",
+    "password":"admin@bishop123"
+}
+
+{
+    "name": "Abdul Gafoor",
+    "email":"migafoor@gmail.com",
+    "password":"gafoor123"
+}
+
+
+
+
+
+const seminar = new siteData(
+{"menuName":{},
+"dataForm":{},
+"fields":[
+	{"title":[{"label":"Caption"}, 
+		{"data":"International Seminar"}]}
+	{"shortDesc":[{"label":"Caption"}, 
+		{"data":"International Seminar on Linguistics"}]}
+	{"dateFrom":[{"label":"Caption"}, 
+		{"data":"College Wins Competetion"}]}
+	{"dateTo":[{"label":"Caption"}, 
+		{"data":"College Wins Competetion"}]}
+	{"date":[{"label":"Caption"}, 
+		{"data":"College Wins Competetion"}]}
+	{"order":[{"label":"Caption"}, 
+		{"data":"College Wins Competetion"}]}
+	{"remarks":[{"label":"Caption"}, 
+		{"data":"College Wins Competetion"}]}
+	]);
+***************************************************************************************************
+{
+  "menuName": "User",
+  "hasSubMenu": "true",
+ "isSubMenuGroup": "false",
+  "subMenuGroup": "NoSubmenuGroup",
+  "formCategory": "",
+  "dataFieldForm": "",
+  "entryFormTitle":"" ,
+  "order": 1,
+  "hasImages": false,
+  "hasCroppedImages": false,
+  "hasLinks": false,
+  "hasFiles": false,
+  "parent": ""
+}
+******************************************************************************************************
+{
+  "menuName": "Home",
+  "hasSubMenu": "true",
+ "isSubMenuGroup": "false",
+  "subMenuGroup": "NoSubmenuGroup",
+  "formCategory": "",
+  "dataFieldForm": "",
+  "entryFormTitle":"" ,
+  "order": 1,
+  "hasImages": false,
+  "hasCroppedImages": false,
+  "hasLinks": false,
+  "hasFiles": false,
+  "parent": ""
+}
+
+**************************************************************************************************
+ DeptBody     Model
+
+"name" : "IQAC"
+"shortdescr" :"Internal Quality Assuarance Cell"
+roles:[{roleName: "Cordinator"}]
+
+
+
+Contact
+
+{
+   "contactName": "Dr. Elias Thomas",
+   "designation": "Asst. Professor",
+   "specialization": "Etymology",
+    "shortDesc":"Asst. Professor  Joined on 20/10/2021",
+    "interestArea":"Linguistics",
+    "contactType": "Faculty",
+    "order":1
+ }
+
+
+
+
+
+*******************************************************************************************************
+{
+"title": "Test latest",
+"shortDesc": "short desc test",
+"remarks": "rem test",
+"description": "<p>Text Editor Desctiption</p>"
+}
+
+*******************ADMIN ENTRY FORM ***********************************************
+{
+"formName":"General Single",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"date", "label":"Date", "fieldType":"Date", "fieldRequired":false, "placeHolder":"Select Date", "order":4},
+	{"fieldName":"location", "label":"Location", "fieldType":"text", "fieldRequired":false, "placeHolder":"Location", "order":5},
+	{"fieldName":"remarks", "label":"Remarks", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":6},
+	{"fieldName":"order", "label":"Order", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Order", "order":7}
+]}	
+
+***********************************************************************************
+{
+"formName":"General",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"remarks", "label":"Remarks", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Remarks", "order":5},
+]}
+
+***********************************************************************************
+{
+"formName":"DefaultForm",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"remarks", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":5}
+]}
+
+
+{
+"formName":"General Short",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Order", "order":6}
+]}
+
+**************************************************************************************
+groupmenu
+
+{"parentMenuId":"63331307b783cec4933afb6b",
+  "menuName":"Economics",
+  "groupRootId":"6333168ae7343f215bcee0f0",
+  "groupRootName":"Department"
+}
+
+
+**************************************************************
+MENU UPDATE -    
+  DEPARTMENTS 63331307b783cec4933afb6b
+{
+  menuName: 'Departments',
+  hasSubMenu: true,
+  isSubMenuGroup: true,
+  subMenuGroup: 'Departments',
+  formCategory: 'DashBoard',
+  dataFieldForm: 'DefaultForm',
+  order: 2,
+  isGroupSubMenu: false
+}
+
+*********************************************************************
+{
+        "fileCaption": "College Day",
+        "fileTag": "Events",
+        "fileCategory": "Events",
+        "fileMasterID": "554",
+        "fileDataID": "634804b243049b0545d0a92f",
+        "fileLink": "https://guidancekerala.in",
+        "fileGroup": "links"
+}
+
+
+********************************************
+fileCaption: 'College Day',
+  fileCategory: 'Events',
+  fileTag: 'Seminar',
+  fileLink: 'https://guidancekerala.in',
+  fileMasterID: 554,
+  fileDataID: '634804b243049b0545d0a92f',
+  fileGroup: 'links'
+********************************************
+
+{
+        "name": "Staff",
+        "shortdescr": "Non Teaching Staff",
+        "slug": "staff"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

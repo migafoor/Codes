@@ -1,0 +1,56 @@
+export const getStaticProps = async () => {
+  const { data: navbarData } = await client.query({
+    query: navbar,
+  });
+
+  const { data: footerData } = await client.query({
+      query: footer,
+  });
+
+  return {
+    props: {
+      headermenu: navbarData.menu.edges,
+      footer: navBarFooter.foo.bar
+    },
+    revalidate: 1,
+  };
+};`
+
+
+OR USE PROMISE ALL
+
+export const getStaticProps = async () => {
+  const navbarQuery = client.query({
+    query: navbar,
+  });
+
+  const footerQery = client.query({
+      query: footer,
+  });
+
+  const responses = await Promise.all([navQuery, footerQuery])
+
+  return {
+    props: {
+      headermenu: responses[0].data.menu.edges,
+      footer: responses[1].data.foo.bar
+    },
+    revalidate: 1,
+  };
+};`
+
+
+************************************************
+export async function getServerSideProps() {
+  const [operationsRes, incidentsRes] = await Promise.all([
+    fetch(`${process.env.APP_DOMAIN}/api/${apiRoute}`), 
+    fetch(`${process.env.APP_DOMAIN}/api/${apiRoute2}`)
+  ]);
+  const [operations, incidents] = await Promise.all([
+    operationsRes.json(), 
+    incidentsRes.json()
+  ]);
+  return { props: { operations, incidents } };
+}
+
+***********************************************************************

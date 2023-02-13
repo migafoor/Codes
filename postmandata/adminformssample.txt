@@ -1,0 +1,72 @@
+{
+    "name": "Admin Bishop Moore",
+    "email":"adminbishop@gmail.com",
+    "password":"admin@bishop123"
+}
+
+
+{
+    "name": "Abdul Gafoor",
+    "email":"migafoor@gmail.com",
+    "password":"gafoor123"
+}
+
+
+ADMIN ENTRY FORM END POINT  :   https://bishopmoorecollege.ac.in/api/adminform/
+
+*******************ADMIN ENTRY FORM ***********************************************
+{
+"formName":"General Single",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"date", "label":"Date", "fieldType":"Date", "fieldRequired":false, "placeHolder":"Select Date", "order":4},
+	{"fieldName":"location", "label":"Location", "fieldType":"text", "fieldRequired":false, "placeHolder":"Location", "order":5},
+	{"fieldName":"remarks", "label":"Remarks", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":6},
+	{"fieldName":"order", "label":"Order", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Order", "order":7}
+]}	
+
+***********************************************************************************
+{
+"formName":"General",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"remarks", "label":"Remarks", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Remarks", "order":5},
+]}
+
+***********************************************************************************
+{
+"formName":"DefaultForm",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"remarks", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":5}
+]}
+
+
+{
+"formName":"General Short",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Order", "order":6}
+]}
+
+**************************************************************************************
+{
+"formName":"Concise Formt",
+"formTag":"Sliders",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1}
+]}
+
+
+
+
+
+

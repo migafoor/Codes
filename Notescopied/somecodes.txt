@@ -1,0 +1,315 @@
+Mongoose UPDATE............................................
+User.update(
+  {'addresses._id': address_id},
+  {$set: {'addresses.$.street': 'Blah'}},
+  function(err, count) { ... });
+*******************************************
+db.users.updateOne( { username: 'bry8dp0h8' },
+{
+  $set: {role: 1}
+})
+
+************************************************************
+db.collection.update({
+  "basicDetails.id": "1"
+},
+
+{
+  "$set": {
+    "tasks.$[tasks].subtasks.$[subtasks].description": "XYZ"
+  }
+},
+
+{
+  "arrayFilters": [
+    {
+      "tasks.id": "10"
+    },
+
+    {
+      "subtasks.id": "120"
+    }
+  ],
+ 
+ multi: true
+})
+*****************************************************
+const tempCar = await Car.findOneAndUpdate(
+      {
+        make: req.params.make,
+      },
+      { $pull: { "models.$[e1].reviews": { _id: req.params._id } } },
+      {
+        arrayFilters: [
+          { "e1.name": req.params.model },
+          { "e2._id": req.params._id },
+        ],
+      }
+    );
+************************************************
+User.findOneAndUpdate(
+        {  _id: "Manasa" },
+        { $push: { "sensors.$[outer].measurements": { "time": req.body.time } } }
+        { "arrayFilters:" [{"outer._id": ObjectId("57da0a4bf3884d1fb2234c74")}]
+    );
+
+*****************cors simple***************
+app.use(cors({
+    origin: 'http://127.0.0.1:3000',
+}))
+
+************************
+const url;
+if (process.env.NODE_ENV === "production") {
+    url = "https://www.example.com/whoami"
+} else {
+    url = "http://127.0.0.1:4000/whoami"
+}
+fetch(url)
+
+*****************************
+*******FOR NEXT CONFIG**********
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'http://localhost:4000/:path*'
+      }
+    ]
+  }
+}
+
+*******************************
+To do this, create-react-app actually comes natively with the ability to set up a simple proxy. 
+Add the following to your package.json:
+"proxy": "http://localhost:4000",
+
+**********************************
+Basically, I just need to add a next.config.js file in the root directory and add the following:
+// next.config.js
+module.exports = {
+    async rewrites() {
+        return [
+          {
+            source: '/api/:path*',
+            destination: 'https://api.example.com/:path*',
+          },
+        ]
+      },
+  };
+*********************************
+*****************GET SERVERSIDE PROPS EG
+
+export async function getServerSideProps(context) {
+  // Fetch data from external API
+  const { data } = await axios.get(
+    `${process.env.NEXT_PUBLIC_BACK_END}/productlist/pagination`,
+    {
+      params: {
+        page: 1,
+        limit: 5,
+      },
+    }
+  );
+
+  return {
+    props: {
+      data: data || {},
+    },
+  };
+
+  // Pass data to the page via props
+}
+
+**********************************************************
+
+db.users.updateOne( { username: 'bry8dp0h8' },
+{
+  $set: {role: 1}
+})
+
+
+***********************************************
+React-table ;;;;;;; may be useful for react-table-component
+
+{
+        Header: "Quantity",
+        accessor:"Quantity",
+        Cell: ({ cell }) => (
+          <Fragment>
+            <input
+              type={"text"}
+              placeholder="Add Quantity b"
+              className="form-control"
+              onChange={(e) => {
+                handleQuantites({
+                  ...cell.row.original,
+                  Quantity: e.target.value,
+                });
+              }}
+              value={cell.row.original.Quantity}
+              min={0}
+            />
+          </Fragment>
+        ),
+      },
+***************************************************************88
+container scss to show inputs in columns
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+.row {
+    display: flex;
+    flex-direction: row;
+    input {
+        flex-grow: 1;
+    }
+form-chkbox   form-control
+*****************************************************************
+OBJECT CHANGE IN AN ARRAY ....   FROM https://bobbyhadz.com/blog/react-update-object-in-array
+
+import {useState} from 'react';
+
+const App = () => {
+  const initialState = [
+    {id: 1, country: 'Austria'},
+    {id: 2, country: 'Belgium'},
+    {id: 3, country: 'Canada'},
+  ];
+
+  const [data, setData] = useState(initialState);
+
+  const updateState = () => {
+    const newState = data.map(obj => {
+      // ??? if id equals 2, update country property
+      if (obj.id === 2) {
+        return {...obj, country: 'Denmark'};
+      }
+
+      // ??? otherwise return object as is
+      return obj;
+    });
+
+    setData(newState);
+  };
+
+  return (
+    <div>
+      <button onClick={updateState}>Update state</button>
+
+      {data.map(obj => {
+        return (
+          <div key={obj.id}>
+            <h2>id: {obj.id}</h2>
+            <h2>country: {obj.country}</h2>
+            <hr />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default App;
+***************************************************************
+<input value={this.state.value} onChange={this.handleChange}/>
+
+ <form className='form search-form' onSubmit={this.handleSubmit}>
+                <div className="form-row">
+                  <div className="form-group col-md-5">
+                    <label htmlFor="keywords">Keywords</label>
+                    <input type="text" className="form-control" name="keywords" id="keywords" placeholder="Keywords" onChange={this.handleKeywordsChange} value={this.state.keywords} />
+
+                  </div>
+
+                  <div className="form-group col-md-5">
+                    <label htmlFor="city">City</label>
+                    <input type="text" className="form-control" name="city" id="city" placeholder="City" onChange={this.handleChange} value={this.state.city} />
+                  </div>
+
+   </form>
+**************************************************************
+handleChecked () {
+        this.setState({isChecked: !this.state.isChecked});
+    }
+**********************************************************
+https://stackoverflow.com/questions/61691369/input-fields-of-react-data-table-losing-focus-after-typing
+
+name: t('product.field.sku'),
+      sortable: true,
+      cell: row => (
+         <div key={`variantlist1-${row.idx}`}  >
+          <Input
+            name={`sku-${row.idx}`}
+            id={`sku-${row.idx}`}
+            key={`sku-${row.idx}`}
+            data-idx={row.idx}
+            onChange={e=>handleVariantListItemChange(e,'sku')}
+            type="text"
+            value={values.variant_list[row.idx].sku}
+          />
+        </div>
+*********************************************************
+https://github.com/jbetancur/react-data-table-component/issues/398
+name: 'Quantity',
+        selector: 'quantity',
+        cell:(row) => (
+            <Aux>
+                <Form.Group as={Row} className="align-items-center m-l-0">
+                    <Col className="px-0">
+                        <Form.Control 
+                            type="text" 
+                            key={"ctn" + row.id}
+                            name={"ctn" + row.id}
+                            id={"ctn" + row.id}
+                            placeholder="" 
+                            value={this.state.itemDetailList[row.id].quantity.ctn} 
+                            onChange={(event) => {
+                                var updatedItemDetailList = this.state.itemDetailList.slice()
+                                updatedItemDetailList[row.id].quantity.ctn = event.target.value
+
+                                this.setState({
+                                    itemDetailList: updatedItemDetailList
+                                })
+                            }}
+                        />
+                    </Col>
+                    <Form.Label column>
+                        CTN
+                    </Form.Label>
+                </Form.Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

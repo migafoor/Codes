@@ -1,0 +1,21 @@
+git add . 
+git commit
+
+git push origin master
+
+git push origin main     -------------- front end
+
+
+module.exports = {
+    publicRuntimeConfig: {
+      APP_NAME: 'Guidance Kerala',
+      API_PRODUCTION: 'https://guidancekerala.com/api',
+      API_DEVELOPMENT: 'https://localhost:8010/api',
+      DOMAIN_DEVELOPMENT: 'https://localhost:3010',
+      DOMAIN_PRODUCTION:'https://guidancekerala.com',
+      PRODUCTION: true
+    }
+  }
+
+
+

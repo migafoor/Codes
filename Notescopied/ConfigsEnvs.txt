@@ -1,0 +1,80 @@
+
+guidancekerala.com
+
+module.exports = {
+    publicRuntimeConfig: {
+      APP_NAME: 'Guidance Kerala',
+      API_PRODUCTION: 'https://guidancekerala.com/api',
+      API_DEVELOPMENT: 'https://localhost:8010/api',
+      DOMAIN_DEVELOPMENT: 'https://localhost:3010',
+      DOMAIN_PRODUCTION:'https://guidancekerala.com',
+      PRODUCTION: true
+    }
+  }
+*****************************************************************
+
+NODE_ENV=production
+PORT=8010
+CLIENT_URL=https://guidancekerala.com
+DATABASE_LOCAL='mongodb://guidanceadmin:AshalRaja2012@localhost:27017/guidance'
+JWT_SECRET=KDJHF7823RHIU3289FJ932I2G8FG239
+
+***********************************************************
+guidancekerala.in
+
+module.exports = {
+    publicRuntimeConfig: {
+      APP_NAME: 'Bits Institution',
+      API_PRODUCTION: 'https://guidancekerala.in/api',
+      API_DEVELOPMENT: 'https://localhost:8000/api',
+      DOMAIN_DEVELOPMENT: 'https://localhost:3000',
+      DOMAIN_PRODUCTION:'https://guidancekerala.in',
+      PRODUCTION: true
+    }
+  }
+
+**************************************************************
+NODE_ENV=production
+PORT=8000
+CLIENT_URL=https://guidancekerala.in
+#DATABASE_LOCAL='mongodb://collegeadmin:AshalRaja2012@194.233.72.250:27017/collegesite'
+#DATABASE_LOCAL='mongodb://collegeadmin:AshalRaja2012@194.163.155.160:27017/collegesite'
+DATABASE_LOCAL='mongodb://collegeadmin:AshalRaja2012@localhost:27017/collegesite'
+JWT_SECRET=KDJHF7823RHIU3289FJ932I2G8FG239
+
+*******************************************************
+
+
+bishopmoorecollege.ac.in
+
+NODE_ENV=development
+PORT=8020
+CLIENT_URL=http://localhost:3020
+DATABASE_LOCAL='mongodb://bishopmooreadmin:adminBishop$2022@194.233.72.250:27017/bishopmoore'
+#DATABASE_LOCAL='mongodb://collegeadmin:AshalRaja2012@194.233.72.250:27017/collegesite'
+#DATABASE_LOCAL='mongodb://collegeadmin:AshalRaja2012@194.163.155.160:27017/collegesite'
+#DATABASE_LOCAL='mongodb://localhost:27017/blog_new'
+JWT_SECRET=KDJHF7823RHIU3289FJ932I2G8FG239
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

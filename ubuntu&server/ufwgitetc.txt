@@ -1,0 +1,14 @@
+*************************************************ALLOW HTTP AND HTTPS  FIREWALL
+sudo ufw enable
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw status
+sudo ufw disable
+ufw app list
+ufw allow 'Nginx HTTP'
+sudo ufw allow 27017
+sudo ufw deny 27017
+
+
+
+mongodb://[collegesiteadmin:adminCollegesite@2022@]host1[:27017]

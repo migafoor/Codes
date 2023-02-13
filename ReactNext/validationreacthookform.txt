@@ -1,0 +1,79 @@
+
+const handleItemChanged = (event, index) => {
+    const value = event.target.value;
+    const list = [...inputList];
+    if(list.filter(f=> f.items === value).length > 0){
+        //you can trigger a manual validation
+        setErrorValidation(true) 
+    }
+    else{
+        setErrorValidation(false) 
+    }
+    //this still allows you to enter text on the field
+    list[index].items = value;
+    setInputList(list) 
+}
+
+***********************************************************
+const isEven = (score: number) => score % 2 === 0;
+
+  const wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+  const emailIsUnique = async (email: string) => {
+    await wait(1000);
+    return email !== "someone@somewhere.com";
+  };
+
+
+ <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="field">
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          ref={register({ required: true })}
+        />
+        {errors.name && errors.name.type === "required" && (
+          <div className="error">Your must enter your name.</div>
+        )}
+      </div>
+      <div className="field">
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          ref={register({ required: true, validate: emailIsUnique })}
+        />
+        {errors.email && errors.email.type === "required" && (
+          <div className="error">Your must enter your email address.</div>
+        )}
+        {errors.email && errors.email.type === "validate" && (
+          <div className="error">This email address already exists</div>
+        )}
+      </div>
+      <div className="field">
+        <label htmlFor="score">Score</label>
+        <input
+          type="number"
+          id="score"
+          name="score"
+          ref={register({ required: true, min: 0, max: 100, validate: isEven })}
+        />
+        {errors.score && errors.score.type === "required" && (
+          <div className="error">Your must enter your score.</div>
+        )}
+        {errors.score && errors.score.type === "min" && (
+          <div className="error">Your score must be at least 0</div>
+        )}
+        {errors.score && errors.score.type === "max" && (
+          <div className="error">Your score must be no more than 100</div>
+        )}
+        {errors.score && errors.score.type === "validate" && (
+          <div className="error">Your score must be and even number</div>
+        )}
+      </div>
+      <button type="submit">Save</button>
+    </form>
+
+***************************************************************************************

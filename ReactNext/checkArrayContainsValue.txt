@@ -1,0 +1,29 @@
+
+//https://stackoverflow.com/questions/63368225/mongoose-find-documents-if-array-contains-a-value
+
+//There are some ways to achieve this. First one is by $elemMatch operator:
+
+const docs = await Documents.find({category: { $elemMatch: {$eq: 'yourCategory'} }});
+// you may need to convert 'yourCategory' to ObjectId
+
+//Second one is by $in or $all operators:
+
+const docs = await Documents.find({category: { $in: [yourCategory] }});
+
+or
+
+const docs = await Documents.find({category: { $all: [yourCategory] }});
+// you can give more categories with these two approaches 
+//and again you may need to convert yourCategory to ObjectId
+
+$in is like OR and $all like AND
+
+
+Third one is by aggregate() function:
+
+const docs = await Documents.aggregate([
+    { $unwind: '$category' },
+    { $match: { 'category': mongoose.Types.ObjectId(yourCategory) } }
+]};
+
+with aggregate() you get only one category id in your category array.

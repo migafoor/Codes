@@ -1,0 +1,110 @@
+
+aapanel : http://194.233.72.250:7800/e6c6a2e9
+
+194.233.72.250
+migafoor
+Amnalayan$#2022
+
+
+
+GIT PUSH FROM LOCAL
+
+git add .
+git commit
+git push 
+git push origin master  -----------backend
+git push origin main     -------------- front end
+make git rep  public
+
+********************************************
+sudo pm2 stop bishopbackend
+sudo pm2 stop bishopfront
+sudo pm2 save
+
+******************************************************************
+cd /home/bishopmoore/bishopmoorebackend
+sudo git pull 
+sudo npm install
+cd /home/bishopmoore/bishopmoorefrontend
+sudo git pull
+sudo npm install
+sudo npm run build
+
+Clear errors and build
+try npm start  in frontend and backend
+run pm2
+********************************************************************
+
+STOP APACHE IF RUNNING
+
+*****************************************************
+sudo pm2 restart bishopbackend
+sudo pm2 restart bishopfront
+sudo pm2 save
+
+*****************************************
+sudo nginx -t
+sudo systemctl restart nginx
+sudo systemctl stop nginx 
+sudo systemctl status nginx
+
+*************************************************
+PM2 STARTING - FIRST TIME  OR AFTER PM2 DELETES******************
+
+cd /home/collegeproj/collegesitebackend
+
+cd /home/guidanceproj/guidancebackend
+sudo pm2 start server.js
+cd /home/collegeproj/collegesite
+sudo pm2 start npm -- start
+sudo pm2 save
+
+
+cd /home/collegeproj/collegesite
+sudo pm2 start npm --name collegesite -- start 
+cd /home/collegeproj/collegesitebackend
+sudo pm2 start server.js --name collegebackend
+sudo pm2 save
+
+cd /home/guidanceproj/guidancebackend
+sudo pm2 start server.js --name guidancebackend
+cd /home/guidanceproj/guidancesite
+sudo pm2 start npm --name guidancesite -- start 
+
+
+cd /home/bishopmoore/bishopmoorebackend
+sudo pm2 start server.js --name bishopbackend
+cd /home/bishopmoore/bishopmoorefrontend
+sudo pm2 start npm --name bishopfront -- start 
+sudo pm2 save
+
+*******************************************************************
+pm2 list  
+pm2 start yarn --name "nextjs" --interpreter bash -- start
+pm2 show nextjs
+pm2 start yarn --name "collegesite" --interpreter bash -- start
+pm2 show collegesite
+pm2 startup
+
+******************************************************************
+
+root /home/bishopmoore/bishopmoorebackend/NAAC/ ;
+sudo chown -R migafoor:www /home/bishopmoore/bishopmoorebackend
+sudo chown -R www:www /home/bishopmoore/bishopmoorefrontend
+sudo chown -R migafoor:www /home/bishopmoore/bishopmoorebackend/uploads
+
+
+
+
+
+cd /home/guidanceproj/guidancebackend
+cd /home/guidanceproj/guidancesite
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+# bishopmoorecollege.ac.in  contabo server   site env and next configs
+
+
+NODE_ENV=development
+PORT=8020
+CLIENT_URL=https://localhost:3020
+#DATABASE_LOCAL='mongodb://bishopmooreadmin:adminBishop$2022@194.233.72.250:27017/bishopmoore'
+DATABASE_LOCAL='mongodb://collegeadmin:AshalRaja2012@194.233.72.250:27017/collegesite'
+#DATABASE_LOCAL='mongodb://collegeadmin:AshalRaja2012@194.163.155.160:27017/collegesite'
+#DATABASE_LOCAL='mongodb://localhost:27017/blog_new'
+JWT_SECRET=KDJHF7823RHIU3289FJ932I2G8FG239
+
+
+module.exports = {
+  publicRuntimeConfig: {
+    APP_NAME: 'Bishop Moore College',
+    //API_DEVELOPMENT: 'https://guidancekerala.in/api',
+    API_DEVELOPMENT: 'http://localhost:8000/api',
+    DOMAIN_DEVELOPMENT: 'http://localhost:3000',
+    DOMAIN_PRODUCTION:'https://guidancekerala.in',
+    PRODUCTION: false
+  }
+}
+
+
+
+module.exports = {
+    publicRuntimeConfig: {
+      APP_NAME: 'Bishop Moore College',
+      API_PRODUCTION: 'https://bishopmoorecollege.ac.in/api',
+      API_DEVELOPMENT: 'https://localhost:8020/api',
+      DOMAIN_DEVELOPMENT: 'https://localhost:3020',
+      DOMAIN_PRODUCTION:'https://bishopmoorecollege.ac.in',
+      PRODUCTION: true
+    }
+}
+
+

@@ -1,0 +1,87 @@
+
+Story.
+  findOne({ title: 'Casino Royale' }).
+  populate('author').
+  exec(function (err, story) {
+    if (err) return handleError(err);
+    console.log('The author is %s', story.author.name);
+    // prints "The author is Ian Fleming"
+  });
+************************************************
+NESTED DOCUMENTS
+
+Project.find(query)
+  .populate({ 
+     path: 'pages',
+     populate: {
+       path: 'components',
+       model: 'Component'
+     } 
+  })
+  .exec(function(err, docs) {});
+***********************************************
+
+
+
+
+*************************************************
+POPULATE SELECTED FIELDS ONLY
+Story.
+  findOne({ title: /casino royale/i }).
+  populate('author', 'name'). // only return the Persons name
+  exec(function (err, story) {
+    if (err) return handleError(err);
+
+*********************************************
+POPULATE MATCHED DOCS ONLY
+
+Story.find().
+  populate({
+    path: 'fans',
+    match: { age: { $gte: 21 } },
+    // Explicitly exclude `_id`, see http://bit.ly/2aEfTdB
+    select: 'name -_id'
+  }).
+  exec();
+***************************************************
+POPULATE MATCHED DOCS ONLY
+
+const story = await Story.
+  findOne({ title: 'Casino Royale' }).
+  populate({ path: 'author', name: { $ne: 'Ian Fleming' } }).
+  exec();
+************************************************
+NESTED
+public courseListRead(): Promise<ICourse[]> {
+    return this.courseModel.find().sort({
+      index: 1
+    }).populate('instructor').populate({
+      path: 'categories',
+      populate: {
+        path: 'posts',
+        model: 'CourseCategoryPost'
+      }
+    }).exec();
+  }
+************************************************
+CANDIDATE- POSITION-DETAIL-  POSITION SCHEMA HAS COMPANY REF 
+Candidate
+    .findById(req.params.id)
+    .populate({
+      path: 'positions.detail',
+      model: Position,
+      populate: {
+        path: 'company',
+        model: Company
+      }
+    })
+    .exec(function (err, foundCandidate) {
+      if (err) {
+        console.log(err)
+
+
+
+
+
+
+

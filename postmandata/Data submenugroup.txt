@@ -1,0 +1,55 @@
+{
+         "menuName": "Coordinator2",
+         "isDeptBody": false,
+        "isAddOfficialMenu": true,
+        "formCategory": "",
+        "hasSubMenu": false,
+        "parent" : "63b1963f67de9bdf2d601d8d",
+        "order": 1"
+    },
+
+" menuName": "Advisor",
+  "hasSubMenu": false,
+ " isDeptBody": false,
+ " isAddOfficialMenu": true,
+  "isSubMenuGroup": false,
+  "subMenuGroup": "NoSubmenuGroup"
+  "formCategory": {},
+  "dataFieldForm": '',
+  entryFormTitle: '',
+  hasImages: false,
+  hasCroppedImages: false,
+  hasLinks: false,
+  hasFiles: false,
+  maxSize: 10,
+  cropWidth: 16,
+  cropHeight: 9,
+  order: 1,
+  parent: '63b1963f67de9bdf2d601d8d',
+  CurrParent: ''
+}
+
+
+
+
+{
+  menuName: 'Coordinator',
+  hasSubMenu: false,
+  isDeptBody: false,
+  isAddOfficialMenu: true,
+  isSubMenuGroup: false,
+  subMenuGroup: 'NoSubmenuGroup',
+  formCategory: '',
+  dataFieldForm: '',
+  entryFormTitle: '',
+  hasImages: false,
+  hasCroppedImages: false,
+  hasLinks: false,
+  hasFiles: false,
+  maxSize: 10,
+  cropWidth: 16,
+  cropHeight: 9,
+  order: 1,
+  parent: '63b1963f67de9bdf2d601d8d',
+  CurrParent: ''
+}

@@ -1,0 +1,176 @@
+aria.ns.cloudflare.com
+carter.ns.cloudflare.com
+
+90256193.dns.guidancekerala.com
+209.99.17.56
+
+ns2.guidancekerala.com    194.163.155.160
+ns1.guidancekerala.com   194.163.155.160
+
+nvm install node        # "node" is an alias for the latest version
+nvm install 14.7.0             # or 16.3.0, 12.22.1, etc
+nvm ls-remote
+nvm use node
+nvm run node --version
+nvm which 12.22
+nvm ls
+
+curl –i 127.0.0.1
+
+curl http://localhost:3000
+	include /etc/nginx/sites-enabled/*;
+Amnalayan@2008
+sudo passwd jerry ##
+/etc/passwd
+useradd -g www-data migafoor
+usermod -a -G www-data migafoor
+ls -l /var/www/guidancekerala.in/html
+
+sudo nginx -t
+sudo systemctl status nginx
+sudo systemctl restart nginx
+sudo systemctl stop nginx 
+
+sudo nano /home/collegesitebackend/server.js
+ln -s /www/server/nginx/conf/sites-available/guidancekerala.in.conf  /www/server/nginx/conf/guidancekerala.in.conf
+
+pm2 list  
+pm2 start yarn --name "nextjs" --interpreter bash -- start
+pm2 show nextjs
+pm2 start yarn --name "collegesite" --interpreter bash -- start
+pm2 show collegesite
+
+/etc/nginx/sites-available
+
+
+
+gunicorn --log-file=- myproject.wsgi:application
+sudo systemctl status gunicorn
+*************************************************ALLOW HTTP AND HTTPS  FIREWALL
+sudo ufw enable
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw status
+sudo ufw disable
+ufw app list
+ufw allow 'Nginx HTTP'
+sudo ufw allow 27017
+sudo ufw deny 27017
+
+
+sudo chown -R $USER:$USER  www/wwwroot/guidancekerala.in
+sudo chmod -R 755 /www/wwwroot/
+
+include /www/server/nginx/sites-enabled/*.conf
+server_names_hash_bucket_size 64;
+
+cd /home/migafoor/myproject
+cd /home/collegeproj/collegesite
+cd /home/collegeproj/collegesitebackend
+
+cd /home/guidanceproj/guidancebackend
+cd /home/guidanceproj/guidancesite
+
+DATABASE_LOCAL='mongodb://collegeadmin:AshalRaja2012@localhost:27017/collegesite'
+DATABASE_LOCAL='mongodb://guidanceadmin:AshalRaja2012@localhost:27017/guidance'
+
+
+Host college_trial
+Hostname github.com
+User migafoor
+IdentityFile ~/.ssh/college_trial
+
+EOL
+
+include /www/server/nginx/sites-available/*.conf;        ********************************************
+
+sudo chown -R mongod:mongod /var/lib/mongo
+sudo chown mongod:mongod /tmp/mongodb-27017.sock
+
+sudo ln -s /www/server/nginx/sites-available/guidancekerala.in  /www/server/nginx/sites-enabled/
+
+sudo git clone college_trial:migafoor/https://github.com/migafoor/college_trial.git
+sudo cat ~/.ssh/colleg_trial.pub
+vi -r /home/migafoor/.ssh/config
+/var/tmp/config.swp
+
+server {
+listen 80;
+server_name www.my-domain.com my-domain.com;
+gzip on;
+gzip_proxied any;
+gzip_types application/javascript application/x-javascript text/css text/javascript;
+gzip_comp_level 6;
+gzip_buffers 16 8k;
+gzip_min_length 256;
+location /_next/static/ {
+alias /var/www/my-website/.next/static/;
+expires 365d;
+access_log off;
+}
+location / {
+proxy_pass http://127.0.0.1:3000;
+proxy_http_version 1.1;
+proxy_set_header Upgrade $http_upgrade;
+proxy_set_header Connection 'upgrade';
+proxy_set_header Host $host;
+proxy_cache_bypass $http_upgrade;
+}
+}
+
+
+
+var allowedOrigins = ['https://localhost:3000','https://guidancekerala.in'];
+app.use(cors({
+   origin: function(origin, callback){    // allow requests with no origin 
+   if(!origin) return callback(null, true);   
+   if(allowedOrigins.indexOf(origin) === -1){
+      var msg = 'The CORS policy for this site does not ' + 'allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }    return callback(null, true);
+  }
+}));
+
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://guidancekerala.in/api/:path*'
+      }
+    ]
+  }
+}
+
+    APP_NAME: 'Bits Institution',
+    API_DEVELOPMENT: 'http://localhost:8000/api',
+    API_PRODUCTION: 'https://guidancekerala.in/api',
+    PRODUCTION: false,
+    DOMAIN_DEVELOPMENT:'http://localhost:3000/',
+    DOMAIN_PRODUCTION:'http:guidancekerala.in/',
+********************************
+
+var allowedOrigins = ['https://localhost:3000','https://guidancekerala.in'];
+
+app.use(cors({
+   origin: function(origin, callback){    // allow requests with no origin
+ 
+   if(!origin) return callback(null, true);
+   
+   if(allowedOrigins.indexOf(origin) === -1){
+
+      var msg = 'The CORS policy for this site does not ' + 'allow access from the specified Origin.';
+
+      return callback(new Error(msg), false);
+    }    return callback(null, true);
+  
+}
+}));
+
+*********************************************************
+
+
+
+
+
+

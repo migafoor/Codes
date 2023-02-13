@@ -1,0 +1,226 @@
+
+
+*******************ADMIN ENTRY FORM ***********************************************
+{
+"formName":"General Single",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"date", "label":"Date", "fieldType":"Date", "fieldRequired":false, "placeHolder":"Select Date", "order":4},
+	{"fieldName":"location", "label":"Location", "fieldType":"text", "fieldRequired":false, "placeHolder":"Location", "order":5},
+	{"fieldName":"remarks", "label":"Remarks", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":6},
+	{"fieldName":"order", "label":"Order", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Order", "order":7}
+]}	
+
+***********************************************************************************
+{
+"formName":"General",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"remarks", "label":"Remarks", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Remarks", "order":5},
+]}
+
+***********************************************************************************
+{
+"formName":"DefaultForm",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":3},
+	{"fieldName":"remarks", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Remarks", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":5}
+]}
+
+
+{
+"formName":"General Short",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1},
+	{"fieldName":"shortDesc", "label":"Short Description", "fieldType":"text", "fieldRequired":false, "placeHolder":"Short Description", "order":2},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Order", "order":6}
+]}
+
+**************************************************************************************
+{
+"formName":"Very Short Single",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1}
+]}
+
+
+News	Caption- Date - Place - URL - Description 
+
+{
+"formName":"News",
+"formTag":"News",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"date", "label":"Date", "fieldType":"Date", "fieldRequired":true, "placeHolder":"Date", "order":2},
+	{"fieldName":"location", "label":"Place", "fieldType":"text", "fieldRequired":false, "placeHolder":"Place", "order":3},
+	{"fieldName":"url", "label":"URL", "fieldType":"text", "fieldRequired":false, "placeHolder":"URL", "order":4},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Description", "order":5},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":6  }]
+}
+
+
+Events	Caption- Date - Date From - Date To , Place - URL - Desc 
+
+{
+"formName":"Events",
+"formTag":"Events",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"date", "label":"Date", "fieldType":"Date", "fieldRequired":true, "placeHolder":"Date", "order":2},
+	{"fieldName":"date", "label":"Date From", "fieldType":"Date", "fieldRequired":false, "placeHolder":"Date From", "order":3},
+	{"fieldName":"date", "label":"Date To", "fieldType":"Date", "fieldRequired":false, "placeHolder":"Date To", "order":4},
+	{"fieldName":"location", "label":"Place", "fieldType":"text", "fieldRequired":false, "placeHolder":"Place", "order":5},
+	{"fieldName":"url", "label":"URL", "fieldType":"url", "fieldRequired":false, "placeHolder":"URL", "order":6},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Description", "order":7},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":8  }]
+}
+
+Downloads   Category Name
+
+{
+"formName":"Downloads",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Category Name", "fieldType":"text", "fieldRequired":false, "placeHolder":"Category Name", "order":1}
+]}
+
+
+Albums	Album Name -   Description (shortdescr)
+
+{
+"formName":"Albums",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Category Name", "fieldType":"text", "fieldRequired":false, "placeHolder":"Category Name", "order":1},
+               {"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Description", "order":2},
+]}
+
+
+Quick Links	Caption , Url
+
+{
+"formName":"Quick Links",
+"formTag":"Single",
+          "fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1},
+          {"fieldName":"url", "label":"URL", "fieldType":"text", "fieldRequired":false, "placeHolder":"URL", "order":2}
+]}
+
+Milestones	Caption  Date   Descriptions
+{
+"formName":"Milestones",
+"formTag":"Single",
+          "fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":false, "placeHolder":"Caption", "order":1},
+		   		{"fieldName":"date", "label":"Date", "fieldType":"Date", "fieldRequired":true, "placeHolder":"Date", "order":2},
+				{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Description", "order":3},
+				{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":4  }
+]}
+
+Activity	Caption- Date - Place  - Description 
+
+{
+"formName":"Activity",
+"formTag":"Activity",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"date", "label":"Date", "fieldType":"Date", "fieldRequired":true, "placeHolder":"Date", "order":2},
+	{"fieldName":"location", "label":"Place", "fieldType":"text", "fieldRequired":false, "placeHolder":"Place", "order":3},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Description", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":5  }]
+}
+
+Academic	Programme Name - Overview(desc) - Seat No 
+
+{
+"formName":"Academics",
+"formTag":"Academics",
+"fields": [{"fieldName":"title", "label":"Programme Name", "fieldType":"text", "fieldRequired":true, "placeHolder":"Programme Name", "order":1},
+	{"fieldName":"description", "label":"Overview", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Overview", "order":2},
+	{"fieldName":"count", "label":"No. of Seats", "fieldType":"Number", "fieldRequired":false, "placeHolder":"No. of Seats", "order":3  }]
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":4  }]
+}
+
+Achievements	Caption -  Date - Place - Description
+
+{
+"formName":"Achievements",
+"formTag":"Achievements",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"date", "label":"Date", "fieldType":"Date", "fieldRequired":true, "placeHolder":"Date", "order":2},
+	{"fieldName":"location", "label":"Place", "fieldType":"text", "fieldRequired":false, "placeHolder":"Place", "order":3},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Description", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":5  }]
+}
+
+
+Testimonial	Name -  Designation - Message(Description)  Facebook-twitter-linkedin 
+
+{
+"formName":"Testimonial",
+"formTag":"Testimonial",
+"fields": [{"fieldName":"title", "label":"Name", "fieldType":"text", "fieldRequired":true, "placeHolder":"Name", "order":1},
+	{"fieldName":"shortDesc", "label":"Designation", "fieldType":"text", "fieldRequired":false, "placeHolder":"Designation", "order":2},
+	{"fieldName":"description", "label":"Message", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Message", "order":3},
+	{"fieldName":"url", "label":"Facebook-twitter-linkedin", "fieldType":"url", "fieldRequired":false, "placeHolder":"Facebook-twitter-linkedin", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":5  }]
+}
+
+Scholarship Form	Scholarship Name - Description - URL
+
+{
+"formName":"Scholarship Form",
+"formTag":"Scholarship Form",
+"fields": [{"fieldName":"title", "label":"Scholarship Name", "fieldType":"text", "fieldRequired":true, "placeHolder":"Scholarship Name", "order":1},
+	{"fieldName":"description", "label":"Message", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Message", "order":3},
+	{"fieldName":"url", "label":"Facebook-twitter-linkedin", "fieldType":"url", "fieldRequired":false, "placeHolder":"Facebook-twitter-linkedin", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Orderby", "order":5  }]
+}
+
+
+General Form      Caption, Description
+{
+"formName":"General",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Caption", "fieldType":"text", "fieldRequired":true, "placeHolder":"Caption", "order":1},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Enter details here", "order":2},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Remarks", "order":3}
+]}
+
+
+Principal Form      Caption, Description
+
+{
+"formName":"Principal",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Principal Name", "fieldType":"text", "fieldRequired":true, "placeHolder":"Principal Name", "order":1},
+                   {"fieldName":"title", "label":"Qualification", "fieldType":"text", "fieldRequired":true, "placeHolder":"Qualification", "order":2},
+	{"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Message", "order":3},
+                  {"fieldName":"url", "label":"Profile Link", "fieldType":"url", "fieldRequired":false, "placeHolder":"Profile Link", "order":4},
+	{"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Order By", "order":5}
+]}
+
+
+{
+"formName":"Albums",
+"formTag":"Single",
+"fields": [{"fieldName":"title", "label":"Category Name", "fieldType":"text", "fieldRequired":false, "placeHolder":"Category Name", "order":1},
+               {"fieldName":"description", "label":"Description", "fieldType":"quill", "fieldRequired":false, "placeHolder":"Description", "order":2},
+               {"fieldName":"order", "label":"Order By", "fieldType":"Number", "fieldRequired":false, "placeHolder":"Order By", "order":3}
+]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,418 @@
+[
+    {
+        "_id": "63a3d78bdeca5e71c6b7716a",
+        "menuName": "Home",
+        "parent": null,
+        "children": [
+            {
+                "_id": "63a3df08deca5e71c6b771d2",
+                "menuName": "Slider",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a3df08deca5e71c6b771d2",
+                "masterID": 48
+            },
+            {
+                "_id": "63a3e14adeca5e71c6b771e0",
+                "menuName": "Welcome Msg",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a3e14adeca5e71c6b771e0",
+                "masterID": 49
+            },
+            {
+                "_id": "63a3e16adeca5e71c6b771e8",
+                "menuName": "News",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a3e16adeca5e71c6b771e8",
+                "masterID": 50
+            },
+            {
+                "_id": "63a3e17cdeca5e71c6b771f0",
+                "menuName": "Events",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a3e17cdeca5e71c6b771f0",
+                "masterID": 51
+            },
+            {
+                "_id": "63a3e193deca5e71c6b771f8",
+                "menuName": "Download",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a3e193deca5e71c6b771f8",
+                "masterID": 52
+            },
+            {
+                "_id": "63a4190d26bed90cb75b2848",
+                "menuName": "Quick Links",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a4190d26bed90cb75b2848",
+                "masterID": 53
+            },
+            {
+                "_id": "63a4230b8a04fe315e6b0a5d",
+                "menuName": "Main Achievements",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a4230b8a04fe315e6b0a5d",
+                "masterID": 55
+            },
+            {
+                "_id": "63a4236d8a04fe315e6b0a6a",
+                "menuName": "College Quotes",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a4236d8a04fe315e6b0a6a",
+                "masterID": 56
+            },
+            {
+                "_id": "63a713fd26bed90cb75b2a69",
+                "menuName": "Notification",
+                "parent": "63a3d78bdeca5e71c6b7716a",
+                "children": [],
+                "path": "63a3d78bdeca5e71c6b7716a#63a713fd26bed90cb75b2a69",
+                "masterID": 91
+            }
+        ],
+        "path": "63a3d78bdeca5e71c6b7716a",
+        "masterID": 38
+    },
+    {
+        "_id": "63a3d79cdeca5e71c6b77171",
+        "menuName": "About Us",
+        "parent": null,
+        "children": [
+            {
+                "_id": "63a424388a04fe315e6b0a9c",
+                "menuName": "History",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a424388a04fe315e6b0a9c",
+                "masterID": 59
+            },
+            {
+                "_id": "63a424748a04fe315e6b0aa5",
+                "menuName": "About College",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a424748a04fe315e6b0aa5",
+                "masterID": 60
+            },
+            {
+                "_id": "63a424a48a04fe315e6b0ab2",
+                "menuName": "College Logo",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a424a48a04fe315e6b0ab2",
+                "masterID": 61
+            },
+            {
+                "_id": "63a424c78a04fe315e6b0abf",
+                "menuName": "Vision",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a424c78a04fe315e6b0abf",
+                "masterID": 62
+            },
+            {
+                "_id": "63a424de8a04fe315e6b0ac7",
+                "menuName": "Mission",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a424de8a04fe315e6b0ac7",
+                "masterID": 63
+            },
+            {
+                "_id": "63a424ff8a04fe315e6b0ad4",
+                "menuName": "Motto",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a424ff8a04fe315e6b0ad4",
+                "masterID": 64
+            },
+            {
+                "_id": "63a425218a04fe315e6b0adc",
+                "menuName": "Institutional Objectives",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a425218a04fe315e6b0adc",
+                "masterID": 65
+            },
+            {
+                "_id": "63a425448a04fe315e6b0ae4",
+                "menuName": "Policies",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [
+                    {
+                        "_id": "63a4255b8a04fe315e6b0aec",
+                        "menuName": "Quality Policy",
+                        "parent": "63a425448a04fe315e6b0ae4",
+                        "children": [],
+                        "path": "63a3d79cdeca5e71c6b77171#63a425448a04fe315e6b0ae4#63a4255b8a04fe315e6b0aec",
+                        "masterID": 67
+                    },
+                    {
+                        "_id": "63a4269d8a04fe315e6b0afd",
+                        "menuName": "Core Values",
+                        "parent": "63a425448a04fe315e6b0ae4",
+                        "children": [],
+                        "path": "63a3d79cdeca5e71c6b77171#63a425448a04fe315e6b0ae4#63a4269d8a04fe315e6b0afd",
+                        "masterID": 68
+                    },
+                    {
+                        "_id": "63a426cc8a04fe315e6b0b05",
+                        "menuName": "Resource Mobilization Policy",
+                        "parent": "63a425448a04fe315e6b0ae4",
+                        "children": [],
+                        "path": "63a3d79cdeca5e71c6b77171#63a425448a04fe315e6b0ae4#63a426cc8a04fe315e6b0b05",
+                        "masterID": 69
+                    },
+                    {
+                        "_id": "63a426ed8a04fe315e6b0b0d",
+                        "menuName": "Strategic Plan",
+                        "parent": "63a425448a04fe315e6b0ae4",
+                        "children": [],
+                        "path": "63a3d79cdeca5e71c6b77171#63a425448a04fe315e6b0ae4#63a426ed8a04fe315e6b0b0d",
+                        "masterID": 70
+                    }
+                ],
+                "path": "63a3d79cdeca5e71c6b77171#63a425448a04fe315e6b0ae4",
+                "masterID": 66
+            },
+            {
+                "_id": "63a427df8a04fe315e6b0b51",
+                "menuName": "Management",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [
+                    {
+                        "_id": "63a4281b8a04fe315e6b0b59",
+                        "menuName": "Manager",
+                        "parent": "63a427df8a04fe315e6b0b51",
+                        "children": [],
+                        "path": "63a3d79cdeca5e71c6b77171#63a427df8a04fe315e6b0b51#63a4281b8a04fe315e6b0b59",
+                        "masterID": 72
+                    },
+                    {
+                        "_id": "63a4290f8a04fe315e6b0b64",
+                        "menuName": "Governing Body",
+                        "parent": "63a427df8a04fe315e6b0b51",
+                        "children": [],
+                        "path": "63a3d79cdeca5e71c6b77171#63a427df8a04fe315e6b0b51#63a4290f8a04fe315e6b0b64",
+                        "masterID": 73
+                    }
+                ],
+                "path": "63a3d79cdeca5e71c6b77171#63a427df8a04fe315e6b0b51",
+                "masterID": 71
+            },
+            {
+                "_id": "63a4295b8a04fe315e6b0b74",
+                "menuName": "Principal",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [
+                    {
+                        "_id": "63a4298a8a04fe315e6b0b7e",
+                        "menuName": "Principal Msg",
+                        "parent": "63a4295b8a04fe315e6b0b74",
+                        "children": [],
+                        "path": "63a3d79cdeca5e71c6b77171#63a4295b8a04fe315e6b0b74#63a4298a8a04fe315e6b0b7e",
+                        "masterID": 75
+                    }
+                ],
+                "path": "63a3d79cdeca5e71c6b77171#63a4295b8a04fe315e6b0b74",
+                "masterID": 74
+            },
+            {
+                "_id": "63a42a4c8a04fe315e6b0b89",
+                "menuName": "Milestones",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a42a4c8a04fe315e6b0b89",
+                "masterID": 76
+            },
+            {
+                "_id": "63a45aa98a04fe315e6b0bd4",
+                "menuName": "RTI Officers",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [
+                    {
+                        "_id": "63a45ac68a04fe315e6b0bdc",
+                        "menuName": "RTI Declaration",
+                        "parent": "63a45aa98a04fe315e6b0bd4",
+                        "children": [],
+                        "path": "63a3d79cdeca5e71c6b77171#63a45aa98a04fe315e6b0bd4#63a45ac68a04fe315e6b0bdc",
+                        "masterID": 79
+                    }
+                ],
+                "path": "63a3d79cdeca5e71c6b77171#63a45aa98a04fe315e6b0bd4",
+                "masterID": 78
+            },
+            {
+                "_id": "63a45af78a04fe315e6b0be7",
+                "menuName": "Code Of Conduct",
+                "parent": "63a3d79cdeca5e71c6b77171",
+                "children": [],
+                "path": "63a3d79cdeca5e71c6b77171#63a45af78a04fe315e6b0be7",
+                "masterID": 80
+            }
+        ],
+        "path": "63a3d79cdeca5e71c6b77171",
+        "masterID": 39
+    },
+    {
+        "_id": "63a3dd5fdeca5e71c6b7718d",
+        "menuName": "Academics",
+        "parent": null,
+        "children": [
+            {
+                "_id": "63a45c758a04fe315e6b0bef",
+                "menuName": "Academic Calender",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a45c758a04fe315e6b0bef",
+                "masterID": 81
+            },
+            {
+                "_id": "63a45d1d8a04fe315e6b0c11",
+                "menuName": "Prospectus",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a45d1d8a04fe315e6b0c11",
+                "masterID": 82
+            },
+            {
+                "_id": "63a46a928a04fe315e6b0cc1",
+                "menuName": "Admission for UG",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a46a928a04fe315e6b0cc1",
+                "masterID": 83
+            },
+            {
+                "_id": "63a46aa58a04fe315e6b0cc9",
+                "menuName": "Admission for PG",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a46aa58a04fe315e6b0cc9",
+                "masterID": 84
+            },
+            {
+                "_id": "63a46acb8a04fe315e6b0cd1",
+                "menuName": "Admission for PhD",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a46acb8a04fe315e6b0cd1",
+                "masterID": 85
+            },
+            {
+                "_id": "63a46b208a04fe315e6b0cd9",
+                "menuName": "PO, PSO, CO",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a46b208a04fe315e6b0cd9",
+                "masterID": 86
+            },
+            {
+                "_id": "63a46fe98a04fe315e6b0d1e",
+                "menuName": "Certificate Programme Regulations",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a46fe98a04fe315e6b0d1e",
+                "masterID": 87
+            },
+            {
+                "_id": "63a470a18a04fe315e6b0d29",
+                "menuName": "Course Plan",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a470a18a04fe315e6b0d29",
+                "masterID": 88
+            },
+            {
+                "_id": "63a473548a04fe315e6b0d3f",
+                "menuName": "Academic Calender- University",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a473548a04fe315e6b0d3f",
+                "masterID": 89
+            },
+            {
+                "_id": "63a473938a04fe315e6b0d47",
+                "menuName": "Time Table",
+                "parent": "63a3dd5fdeca5e71c6b7718d",
+                "children": [],
+                "path": "63a3dd5fdeca5e71c6b7718d#63a473938a04fe315e6b0d47",
+                "masterID": 90
+            }
+        ],
+        "path": "63a3dd5fdeca5e71c6b7718d",
+        "masterID": 40
+    },
+    {
+        "_id": "63a3dd98deca5e71c6b77194",
+        "menuName": "Departments",
+        "parent": null,
+        "children": [],
+        "path": "63a3dd98deca5e71c6b77194",
+        "masterID": 41
+    },
+    {
+        "_id": "63a3de2cdeca5e71c6b771a5",
+        "menuName": "Students Support",
+        "parent": null,
+        "children": [
+            {
+                "_id": "63a42bf48a04fe315e6b0bac",
+                "menuName": "Clubs",
+                "parent": "63a3de2cdeca5e71c6b771a5",
+                "children": [],
+                "path": "63a3de2cdeca5e71c6b771a5#63a42bf48a04fe315e6b0bac",
+                "masterID": 77
+            }
+        ],
+        "path": "63a3de2cdeca5e71c6b771a5",
+        "masterID": 42
+    },
+    {
+        "_id": "63a3de4edeca5e71c6b771af",
+        "menuName": "Campus",
+        "parent": null,
+        "children": [],
+        "path": "63a3de4edeca5e71c6b771af",
+        "masterID": 43
+    },
+    {
+        "_id": "63a3de69deca5e71c6b771b6",
+        "menuName": "Virtual Classroom",
+        "parent": null,
+        "children": [],
+        "path": "63a3de69deca5e71c6b771b6",
+        "masterID": 44
+    },
+    {
+        "_id": "63a3de83deca5e71c6b771bd",
+        "menuName": "MHRD",
+        "parent": null,
+        "children": [],
+        "path": "63a3de83deca5e71c6b771bd",
+        "masterID": 45
+    },
+    {
+        "_id": "63a3de92deca5e71c6b771c4",
+        "menuName": "IQAC",
+        "parent": null,
+        "children": [],
+        "path": "63a3de92deca5e71c6b771c4",
+        "masterID": 46
+    },
+    {
+        "_id": "63a3dea4deca5e71c6b771cb",
+        "menuName": "Research & Publication",
+        "parent": null,
+        "children": [],
+        "path": "63a3dea4deca5e71c6b771cb",
+        "masterID": 47
+    }
+]

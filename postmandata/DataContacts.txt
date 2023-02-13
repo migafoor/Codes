@@ -1,0 +1,179 @@
+{
+    "name": "Admin Bishop Moore",
+    "email":"adminbishop@gmail.com",
+    "password":"admin@bishop123"
+}
+
+{
+    "name": "Abdul Gafoor",
+    "email":"migafoor@gmail.com",
+    "password":"gafoor123"
+}
+
+
+**************************************************************************************************
+ DeptBody     Model
+
+"name" : "IQAC"
+"shortdescr" :"Internal Quality Assuarance Cell"
+roles:[{roleName: "Cordinator"}]
+
+
+
+Contact
+
+{
+   "contactName": "Dr. Elias Thomas",
+   "designation": "Asst. Professor",
+   "specialization": "Etymology",
+    "shortDesc":"Asst. Professor  Joined on 20/10/2021",
+    "interestArea":"Linguistics",
+    "contactType": "Faculty",
+    "order":1
+ }
+
+*******************************************************************************************************
+Dept. Body
+
+ DeptBody     Model
+{
+"name" : "IQAC"
+"shortdescr" :"Internal Quality Assuarance Cell"
+}
+
+{
+"name" : "IQAC",
+"shortdescr" :"Internal Quality Assuarance Cell",
+"slug":"iqac",
+"roles":[{ "roleName": "Coordinator",
+                "roleMaxNo":1,
+                "roleContacts": [{"contact":"63917dde04f5f0b8dd30bce1",
+                                              "repCategory":"63909cb1570baa63e44e57b3"}]
+              },
+         ]
+}
+
+
+
+
+
+rep     staff      63909cb1570baa63e44e57b3
+
+raphel   63917dde04f5f0b8dd30bc
+
+"deptBody": new ObjectId("63b381ac16b986f0a1d51e0d")
+
+63b381ac16b986f0a1d51e0d
+"deptBody": new ObjectId("63b381ac16b986f0a1d51e0d")
+63a427df8a04fe315e6b0b51
+
+{
+ "menuName":"Management",
+  "hasSubMenu": true,
+  "isDeptBody": true,
+  "isAddOfficialMenu": false,
+  "isSubMenuGroup": false,
+  "subMenuGroup":"NoSubmenuGroup",
+  "formCategory":"",
+  "dataFieldForm":"",
+  "customForm":"",
+  "entryFormTitle":"",
+  "hasImages": false,
+  "hasCroppedImages": false,
+  "hasLinks": false,
+  "hasFiles": false,
+  "cropWidth": 16,
+  "cropHeight": 9,
+  "order": 9,
+  "parent": "63a3d79cdeca5e71c6b77171",
+  "deptBody": ""
+
+"deptBody": ""
+
+}
+
+
+{
+  "menuName": "IQAC2",
+  "hasSubMenu": true,
+  "isDeptBody": true,
+  "isAddOfficialMenu": false,
+  "isSubMenuGroup": false,
+  "subMenuGroup": "NoSubmenuGroup",
+  "formCategory": '',
+  "dataFieldForm": '',
+ "customForm": '',
+ "entryFormTitle: '',
+ "hasImages ": false,
+  "hasCroppedImages ": false,
+ "hasLinks": false,
+  "hasFiles": false,
+  "cropWidth": 16,
+  "cropHeight": 9,
+  "order": 1,
+  "parent": null,
+  "deptBody": "63b3b0fca9aec0c49959a175"
+}
+
+
+{
+        "menuName": "IQAC",
+        "hasSubMenu": true,
+        "isSubMenuGroup": false,
+        "isDeptBody": true,
+        "deptBody": "63b3daea8a7690881cfd2d52",
+        "isAddOfficialMenu": false,
+        "subMenuGroup": "NoSubmenuGroup",
+        "order": 13,
+        "formCategory": "",
+        "dataFieldForm": "",
+        "customForm": {
+            "value": "DefaultCustomForm",
+            "label": "Default Custom Form"
+        },
+        "entryFormTitle": "",
+        "hasImages": false,
+        "hasCroppedImages": false,
+        "hasFiles": false,
+        "hasLinks": false,
+        "maxImageSize": 10,
+        "cropWidth": 16,
+        "cropHeight": 9
+    }
+
+
+
+console.log('req body to update without deptBody',req.body)
+console.log('req body to update without deptBody',req.body)
+console.log('req body to update without deptBody',req.body)
+
+
+
+
+
+{
+  "menuName": "Management',
+  hasSubMenu: true,
+  isDeptBody: true,
+  isAddOfficialMenu: false,
+  isSubMenuGroup: false,
+  subMenuGroup: 'NoSubmenuGroup',
+  formCategory: {},
+  dataFieldForm: '',
+  customForm: '',
+  entryFormTitle: '',
+  hasImages: false,
+  hasCroppedImages: false,
+  hasLinks: false,
+  hasFiles: false,
+  cropWidth: 16,
+  cropHeight: 9,
+  order: 9,
+  parent: '63a3d79cdeca5e71c6b77171',
+  deptBody: '63b3888edbb053187390da81'
+}
+
+
+
+
+

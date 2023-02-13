@@ -1,0 +1,39 @@
+const event = new AdminEntryForm(
+{"formTitle":"Event Form",
+"fields":[
+	{"fieldName":"title",
+	 "label":"Caption",
+	 "fieldRequired":true, 
+	 "placeHolder":"News Caption",
+	 "order":1},
+
+	{"fieldName":"description",
+	 "label":"NewsDetails",
+	 "fieldRequired":false, 
+	 "placeHolder":"News Description",
+	 "order":2},
+
+	{"fieldName":"shortDesc",
+	 "label":"Short description",
+	 "fieldRequired":false, 
+	 "placeHolder":"Short description",
+	 "order":3},
+
+	{"fieldName":"date",
+	 "label":"Date",
+	 "fieldRequired":false, 
+	 "placeHolder":"News Date",
+	 "order":4},
+
+	{"fieldName":"order",
+	 "label":"Order No",
+	 "fieldRequired":false, 
+	 "placeHolder":"order",
+	 "order":5},
+	
+	{"fieldName":"remarks",
+	 "label":"Remarks",
+	 "fieldRequired":false, 
+	 "placeHolder":"Remarks",
+	 "order":6},		
+	]}

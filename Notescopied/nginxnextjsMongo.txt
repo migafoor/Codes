@@ -1,0 +1,224 @@
+*****************SERVER BLOCKS
+location /api {
+
+	  proxy_pass http://localhost:8000;
+
+  	proxy_http_version 1.1;
+ 
+ 	 proxy_set_header Upgrade $http_upgrade;
+ 
+  	proxy_set_header Connection 'upgrade';
+ 
+ 	 proxy_set_header Host $host;
+ 
+  	proxy_cache_bypass $http_upgrade;
+
+	 }
+
+
+location / {
+
+	    proxy_pass http://localhost:3000;
+
+	    proxy_http_version 1.1;
+
+	    proxy_set_header Upgrade $http_upgrade;
+
+	    proxy_set_header Connection 'upgrade';
+
+	    proxy_set_header Host $host;
+
+	    proxy_cache_bypass $http_upgrade;
+
+	  }
+Amnalayan@2008
+
+************************NGINX*******************
+
+sudo nginx -t
+sudo systemctl status nginx
+sudo systemctl restart nginx
+sudo systemctl stop nginx 
+
+sudo mkdir -p /var/www/guidancekerala.in/html
+sudo mkdir -p /var/www/test.com/html
+
+sudo chown -R $USER:$GROUP /var/www/guidancekerala.in/html
+sudo chown -R migafoor:migafoor /var/www/guidancekerala.in/html
+sudo chown migafoor:www-data /var/www/guidancekerala.in/html
+
+nano /var/www/guidancekerala.in/html/index.html
+
+sudo chown -R www-data: /var/www/guidancekerala.com
+
+
+
+access_log /var/log/nginx/guidancekerala.com.access.log;
+error_log /var/log/nginx/guidancekerala.com.error.log;
+
+
+<html>
+    <head>
+        <title>Welcome to guidancekerala.in</title>
+    </head>
+    <body>
+        <h1>Success! guidancekerala.in server block is working!</h1>
+    </body>
+</html>
+
+
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/guidancekerala.in
+sudo nano /etc/nginx/sites-available/guidancekerala.com
+
+	root /var/www/guidancekerala.in/html;
+        	index index.html index.htm index.nginx-debian.html;
+
+        	server_name guidancekerala.in www.guidancekerala.in;
+
+sudo ln -s /etc/nginx/sites-available/guidancekerala.in  /etc/nginx/sites-enabled/
+
+
+sudo nginx -t -c /etc/nginx/sites-available/guidancekerala.com
+sudo ln -s /etc/nginx/sites-available/guidancekerala.com /etc/nginx/sites-enabled/guidancekerala.com
+
+in nginx*******
+server_names_hash_bucket_size 64;
+sudo nginx -t
+sudo systemctl restart nginx
+sudo systemctl status nginx
+www.guidancekerala.in
+
+*******************************MONGODB
+
+sudo apt install -y software-properties-common gnupg apt-transport-https ca-certificates
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -        *********** for latest package
+
+wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -     ********** res OK************ if error     sudo apt-get install gnupg 
+
+/etc/apt/sources.list.d/mongodb-org-6.0.list
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+sudo apt-get update
+echo "mongodb-org hold" | sudo dpkg --set-selections
+echo "mongodb-org-database hold" | sudo dpkg --set-selections
+echo "mongodb-org-server hold" | sudo dpkg --set-selections
+echo "mongodb-mongosh hold" | sudo dpkg --set-selections
+echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
+echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+
+mongod --version
+sudo systemctl status mongod
+sudo systemctl start mongod
+sudo systemctl status mongod
+mongod --eval 'db.runCommand({ connectionStatus: 1 })'
+sudo systemctl enable mongod
+mongod --version
+mongosh
+show dbs
+
+**************** To create a database invoke the use command followed by the database name.
+use employees 
+
+db.createUser
+db.createUser(
+  {
+    user: "cherry",
+    pwd: "some_password",
+    roles: [ { role: "readWrite", db: "employees" } ]
+  }
+)
+*************
+db.getUsers()
+show users
+db.dropUser
+db.dropUser("cherry", {w: "majority", wtimeout: 4000})
+
+******************************************************************* 
+MONGO SET ONLINE ACCESS **********************
+
+sudo lsof -i | grep mongo
+sudo ufw allow from 192.168.103.2 to any port 27017
+sudo nano /etc/mongod.conf
+sudo systemctl restart mongod
+sudo systemctl status mongod
+
+cd /home/collegesitebackend
+sudo pm2 start server.js
+cd /home/collegesite
+sudo pm2 start npm -- start
+sudo pm2 save
+
+ db.createUser(
+  {
+    user: "mongoadmin",
+    pwd: "ashalrajaYOB2012",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+
+use admin
+db.updateUser(
+   "mongoadmin",
+   {
+      pwd: "ashalrajaYOB2012",
+   }
+)
+
+ db.createUser(
+  {
+    user: "rootadmin",
+    pwd: "abdul@gafoor2022",
+    roles: [ { role: "root", db: "admin" } ]
+  }
+)
+
+db.createUser(
+  {
+    user: "collegesiteadmin",
+    pwd: "adminCollegesite@2022",
+    roles: [ { role: "readWrite", db: "collegesite" } ]
+  }
+)
+
+db.createUser(
+  {
+    user: "collegeadmin",
+    pwd: "AshalRaja2012",
+    roles: [ { role: "readWrite", db: "collegesite" } ]
+  }
+)
+
+db.createUser(
+  {
+    user: "guidanceadmin",
+    pwd: "AshalRaja2012",
+    roles: [ { role: "readWrite", db: "guidance" } ]
+  }
+)
+
+mongoadmin
+ashalrajaYOB2012
+admin
+194.233.72.250
+27017
+
+
+enum: {
+                    values: ['SingleItem', 'MultipleItems','DashBoard']
+                    },
+
+mongod --auth --port 27017 --dbpath /var/lib/mongodb
+mongosh --port 27017 admin -u rootadmin -p abdul@gafoor2022
+
+MONGODB CONNECTION ERROR TO PORT*************** AFTER AUTHENTICATION MONGO DB FAILED TO RESTART
+ERROR WAS SOLVED USING THE FOLLOWING CODE 
+sudo chown -R mongodb:mongodb /var/lib/mongodb
+sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
+sudo service mongod restart
+sudo systemctl restart mongod
+sudo systemctl status mongod
+
+Connection String
+mongodb://mongoadmin:ashalrajaYOB2012@194.233.72.250:27017/?authSource=admin
+
+db.grantRolesToUser('mongoadmin', ['readWriteAnyDatabase']);

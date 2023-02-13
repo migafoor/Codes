@@ -1,0 +1,392 @@
+
+ 63b24e13c4270c39af2d49c3
+{
+  "menuName": "Management",
+  "hasSubMenu": true,
+  "isDeptBody": true,
+  isAddOfficialMenu: false,
+  isSubMenuGroup: false,
+  subMenuGroup: 'NoSubmenuGroup',
+  formCategory: {},
+  dataFieldForm: '',
+  customForm: '',
+  entryFormTitle: '',
+  hasImages: false,
+  hasCroppedImages: false,
+  hasLinks: false,
+  hasFiles: false,
+  cropWidth: 16,
+  cropHeight: 9,
+  order: 1,
+  parent: '63331307b783cec4933afb6c',
+  deptBody: ''
+}
+
+
+
+
+
+
+
+
+
+
+
+{"name":"Home","isMenu":"true","order":1,}
+
+********************************************
+{
+"name":"Home",
+"isMenu":"true",
+"category":"Main",
+"order":1,
+"description":"Home menu for test"
+}
+************************************************
+
+{
+"name":"Events",
+"isMenu":"true",
+"category":"Main",
+"order":1,
+"description":"Home menu for test",
+"items":[{"name":"Associations",
+	"isMenu":"true",
+	"category":"Sub",
+	"order":1,
+	"description":"Home menu for test"}],
+}
+
+************************************************
+{
+"name":"Activities",
+"isMenu":"true",
+"category":"Main",
+"order":1,
+"description":"Activities main menu for test",
+"items":[{"name":"Extension Activities",
+	"isMenu":"true",
+	"category":"Sub",
+	"order":1,
+	"description":"Activities sub menu for test"}
+	"items":[{"name":"Educational Services",
+		"isMenu":"true",
+		"category":"deep 2",
+		"order":1,
+		"description":"Activities nested subdocuments III test"}
+		],
+	],
+}
+****************************************************
+{
+"items":[{"items":[{"name":"Inauguration",
+	"isMenu":"true",
+	"category":"deep 2",
+	"order":1,
+	"description":"Adding nested subdocuments test"}]
+	}]
+}
+*******************************************************	
+
+{
+"title":"Kerala Destination for nature lovers",
+"body":"Main",
+"description":"Home menu for test"
+}
+
+{
+"email":"migafoor@gmail.com",
+"password":"Amnalayan@2008"
+}
+************************************************
+{
+"items":[
+	  "name": "Gafoor"
+	  "address":"Kuttooli"
+	   
+	]
+"name":"Members",
+"category":"Main",
+"description":"Home menu for test"
+}
+***************************************************
+{
+"items":[
+	  {"name" : "Gafoor"},
+	  {"address":"Kuttooli"}}
+	],
+"name":"Members",
+"category":"Main",
+"description":"Home menu for test"
+}
+**************************************************
+{
+        items: [{ name: String },
+            { address: String },
+            {
+                items: [{ name: String },
+                    { address: String },
+            ],},
+        ],
+
+**************************************************
+
+{
+    "status": "success",
+    "results": 5,
+    "data": {
+        "newmenus": [
+            {
+                "_id": "62f12a6ce8f1737617eaa950",
+                "name": "Home",
+                "isMenu": true,
+                "order": 1,
+                "children": [
+                    {
+                        "_id": "62f12a6ce8f1737617eaa955",
+                        "name": "Events",
+                        "isMenu": true,
+                        "order": 1,
+                        "parent": "62f12a6ce8f1737617eaa950",
+                        "children": [],
+                        "path": "62f12a6ce8f1737617eaa950#62f12a6ce8f1737617eaa955",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "62f12a6ce8f1737617eaa956",
+                        "name": "Activities",
+                        "isMenu": true,
+                        "order": 2,
+                        "parent": "62f12a6ce8f1737617eaa950",
+                        "children": [
+                            {
+                                "_id": "62f12a6ce8f1737617eaa957",
+                                "name": "Ext. Activities",
+                                "isMenu": true,
+                                "order": 1,
+                                "parent": "62f12a6ce8f1737617eaa956",
+                                "children": [],
+                                "path": "62f12a6ce8f1737617eaa950#62f12a6ce8f1737617eaa956#62f12a6ce8f1737617eaa957",
+                                "__v": 0
+                            },
+                            {
+                                "_id": "62f12a6ce8f1737617eaa958",
+                                "name": "Extra Curricular",
+                                "isMenu": true,
+                                "order": 2,
+                                "parent": "62f12a6ce8f1737617eaa956",
+                                "children": [],
+                                "path": "62f12a6ce8f1737617eaa950#62f12a6ce8f1737617eaa956#62f12a6ce8f1737617eaa958",
+                                "__v": 0
+                            }
+                        ],
+                        "path": "62f12a6ce8f1737617eaa950#62f12a6ce8f1737617eaa956",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "62f12a6ce8f1737617eaa959",
+                        "name": "Message",
+                        "isMenu": true,
+                        "order": 3,
+                        "parent": "62f12a6ce8f1737617eaa950",
+                        "children": [],
+                        "path": "62f12a6ce8f1737617eaa950#62f12a6ce8f1737617eaa959",
+                        "__v": 0
+                    }
+                ],
+                "path": "62f12a6ce8f1737617eaa950",
+                "__v": 0
+            },
+            {
+                "_id": "62f12a6ce8f1737617eaa951",
+                "name": "Departments",
+                "isMenu": true,
+                "order": 2,
+                "children": [
+                    {
+                        "_id": "62f12a6ce8f1737617eaa95a",
+                        "name": "English",
+                        "isMenu": true,
+                        "order": 1,
+                        "parent": "62f12a6ce8f1737617eaa951",
+                        "children": [
+                            {
+                                "_id": "62f12a6ce8f1737617eaa95b",
+                                "name": "Profile",
+                                "isMenu": true,
+                                "order": 1,
+                                "parent": "62f12a6ce8f1737617eaa95a",
+                                "children": [],
+                                "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a#62f12a6ce8f1737617eaa95b",
+                                "__v": 0
+                            },
+                            {
+                                "_id": "62f12a6ce8f1737617eaa95c",
+                                "name": "Academics",
+                                "isMenu": true,
+                                "order": 2,
+                                "parent": "62f12a6ce8f1737617eaa95a",
+                                "children": [
+                                    {
+                                        "_id": "62f12a6ce8f1737617eaa95e",
+                                        "name": "UG Courses",
+                                        "isMenu": true,
+                                        "order": 1,
+                                        "parent": "62f12a6ce8f1737617eaa95c",
+                                        "children": [],
+                                        "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a#62f12a6ce8f1737617eaa95c#62f12a6ce8f1737617eaa95e",
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "62f12a6ce8f1737617eaa95f",
+                                        "name": "PG Courses",
+                                        "isMenu": true,
+                                        "order": 2,
+                                        "parent": "62f12a6ce8f1737617eaa95c",
+                                        "children": [],
+                                        "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a#62f12a6ce8f1737617eaa95c#62f12a6ce8f1737617eaa95f",
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "62f12a6ce8f1737617eaa960",
+                                        "name": "Cert. Courses",
+                                        "isMenu": true,
+                                        "order": 3,
+                                        "parent": "62f12a6ce8f1737617eaa95c",
+                                        "children": [],
+                                        "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a#62f12a6ce8f1737617eaa95c#62f12a6ce8f1737617eaa960",
+                                        "__v": 0
+                                    }
+                                ],
+                                "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a#62f12a6ce8f1737617eaa95c",
+                                "__v": 0
+                            },
+                            {
+                                "_id": "62f12a6ce8f1737617eaa95d",
+                                "name": "Staff",
+                                "isMenu": true,
+                                "order": 3,
+                                "parent": "62f12a6ce8f1737617eaa95a",
+                                "children": [
+                                    {
+                                        "_id": "62f12a6ce8f1737617eaa961",
+                                        "name": "Teaching Staff",
+                                        "isMenu": true,
+                                        "order": 1,
+                                        "parent": "62f12a6ce8f1737617eaa95d",
+                                        "children": [],
+                                        "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a#62f12a6ce8f1737617eaa95d#62f12a6ce8f1737617eaa961",
+                                        "__v": 0
+                                    },
+                                    {
+                                        "_id": "62f12a6ce8f1737617eaa962",
+                                        "name": "NT Staff",
+                                        "isMenu": true,
+                                        "order": 2,
+                                        "parent": "62f12a6ce8f1737617eaa95d",
+                                        "children": [],
+                                        "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a#62f12a6ce8f1737617eaa95d#62f12a6ce8f1737617eaa962",
+                                        "__v": 0
+                                    }
+                                ],
+                                "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a#62f12a6ce8f1737617eaa95d",
+                                "__v": 0
+                            }
+                        ],
+                        "path": "62f12a6ce8f1737617eaa951#62f12a6ce8f1737617eaa95a",
+                        "__v": 0
+                    }
+                ],
+                "path": "62f12a6ce8f1737617eaa951",
+                "__v": 0
+            },
+            {
+                "_id": "62f12a6ce8f1737617eaa952",
+                "name": "IQAC",
+                "isMenu": true,
+                "order": 3,
+                "children": [],
+                "path": "62f12a6ce8f1737617eaa952",
+                "__v": 0
+            },
+            {
+                "_id": "62f12a6ce8f1737617eaa953",
+                "name": "Clubs and Cells",
+                "isMenu": true,
+                "order": 4,
+                "children": [
+                    {
+                        "_id": "62f12a6ce8f1737617eaa963",
+                        "name": "Statutory Cells",
+                        "isMenu": true,
+                        "order": 2,
+                        "parent": "62f12a6ce8f1737617eaa953",
+                        "children": [],
+                        "path": "62f12a6ce8f1737617eaa953#62f12a6ce8f1737617eaa963",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "62f12a6ce8f1737617eaa964",
+                        "name": "Nature Club",
+                        "isMenu": true,
+                        "order": 2,
+                        "parent": "62f12a6ce8f1737617eaa953",
+                        "children": [],
+                        "path": "62f12a6ce8f1737617eaa953#62f12a6ce8f1737617eaa964",
+                        "__v": 0
+                    }
+                ],
+                "path": "62f12a6ce8f1737617eaa953",
+                "__v": 0
+            },
+            {
+                "_id": "62f12a6ce8f1737617eaa954",
+                "name": "Contact Us",
+                "isMenu": true,
+                "order": 5,
+                "children": [],
+                "path": "62f12a6ce8f1737617eaa954",
+                "__v": 0
+            }
+        ]
+    }
+}
+
+***********************************************************************************************8
+defaultValues: {
+        menuName: menuformitem.menuName,
+        hasSubMenu: menuformitem.hasSubMenu,
+        isSubMenuGroup: menuformitem.isSubMenuGroup,
+        subMenuGroup: menuformitem.subMenuGroup,
+        formCategory: menuformitem.formCategory,
+        dataFieldForm: menuformitem.dataFieldForm,
+        order: menuformitem.order,
+        parent: menuitem.menuName
+      }
+*************************************************************************************************
+{"menuName": 'Principals'}
+
+{"menuName":"About the College",
+"hasSubMenu":false,
+"isSubMenuGroup":false,
+"subMenuGroup":"NoSubmenuGroup",
+"formCategory":"SingleItem",
+"dataFieldForm":"defaultForm",
+"order":1,
+"parent":"Home"}
+
+{"menuName":"New Test",
+"hasSubMenu":false,
+"isSubMenuGroup":false,
+"subMenuGroup":"NoSubmenuGroup",
+"formCategory":"MultipleItems",
+"dataFieldForm":"defaultForm",
+"order":1,
+"parent":"6303d12c67956c851625b41c"}
+
+
+
+
+
+
+

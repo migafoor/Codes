@@ -1,0 +1,83 @@
+pm2 list  
+pm2 start yarn --name "nextjs" --interpreter bash -- start
+pm2 show nextjs
+pm2 start yarn --name "collegesite" --interpreter bash -- start
+pm2 show collegesite
+pm2 startup
+
+************************PM2: Share the same daemon process between multiple users************************
+
+First, create a new group on user with sudo privileges:
+sudo groupadd pm2
+
+Add the deploy user and yourself to this newly created group:
+sudo usermod -a -G pm2 deploy
+sudo usermod -a -G pm2 me
+
+Create a common configuration PM2 directory anywhere you want (except home directory):
+s
+
+Now, go to any project that has PM2 configured and start it with:
+PM2_HOME=/etc/pm2daemon pm2 start app.js
+
+Now it is time to set the permissions on this directory:
+sudo chgrp -R pm2 /etc/pm2daemon
+sudo chmod -R 770 /etc/pm2daemon
+Now only members of the pm2 group can read, write, or execute anything within the directory.
+
+new files will be owned by the directory’s group instead of the creating user’s group. To do so, type:
+sudo chmod g+s /etc/pm2daemon
+
+tell PM2 to use the new common configuration directory instead of current user’s directory by exporting a environment variable. You can do it globally or locally per user. I prefer the second option:
+nano ~/.bashrc
+# PM2 environment
+export PM2_HOME=/etc/pm2daemon
+
+log out and log back in to be able to see the changes. 
+******************************************************************************************
+PM2 STARTUP DONE*****************************************
+pm2 startup
+/etc/systemd/system/pm2-migafoor.service
+ pm2 save
+pm2 unstartup systemd
+
+cd /home/collegeproj/collegesitebackend
+
+cd /home/guidanceproj/guidancebackend
+sudo pm2 start server.js
+cd /home/collegeproj/collegesite
+sudo pm2 start npm -- start
+sudo pm2 save
+
+
+cd /home/collegeproj/collegesite
+sudo pm2 start npm --name collegesite -- start 
+
+cd /home/collegeproj/collegesitebackend
+sudo pm2 start server.js --name collegebackend
+
+cd /home/guidanceproj/guidancebackend
+sudo pm2 start server.js --name guidancebackend
+
+cd /home/guidanceproj/guidancesite
+sudo pm2 start npm --name guidancesite -- start 
+
+
+cd /home/bishopmoore/bishopmoorebackend
+sudo pm2 start server.js --name bishopbackend
+cd /home/bishopmoore/bishopmoorefrontend
+sudo pm2 start npm --name bishopfront -- start 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

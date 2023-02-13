@@ -1,0 +1,175 @@
+
+
+	<Controller
+          control={control}
+          name='startDate'
+          render={({ field: { value = newStartDate, onChange } }) => (
+            <DatePicker
+              onChange={date => {
+                setNewStartDate(date);
+                onChange(newStartDate);
+              }}
+              selected={value}
+              dateFormat='MM/dd/yyyy'
+              required
+            />
+
+****************************************************************
+<Controller
+    name="resetDateTime"
+    control={control}
+    rules={{ required: true }}
+    render={({ field }) => (
+        <Datetime
+            onChange={(date) => field.onChange(date)}
+            selected={field.value}
+            inputProps={{
+                placeholder: "MM-DD-YYYY HH:mm",
+            }}
+            viewMode="time"
+        />
+    )}
+/>
+{errors.resetDateTime && <span>This field is required</span>}
+
+***************************************************************************
+CURRENTLY DONE
+
+<Controller
+                control={control}
+                name="dateInput"
+                render={({ field }) => (
+                  <DatePicker
+                    placeholderText="Select date"
+                    onChange={(date) => field.onChange(date)}
+                    selected={field.value}
+                  />
+                )}
+              />
+              {errors.dateInput && <span>This field is required</span>}
+
+******************************************************************
+
+<Controller
+    control={control}
+    name='date-input'
+    render={({ field }) => (
+      <DatePicker
+        placeholderText='Select date'
+        onChange={(date) => field.onChange(date)}
+        selected={field.value}
+      />
+   )}
+  />
+
+****************************************************************************
+<Controller
+          control={control}
+          name="date"
+          rules={{ required: true }} //optional
+          render={({
+            field: { onChange, name, value },
+            fieldState: { invalid, isDirty }, //optional
+            formState: { errors }, //optional, but necessary if you want to show an error message
+          }) => (
+            <>
+              <DatePicker
+                value={value || ""}
+                onChange={(date) => {
+                  onChange(date?.isValid ? date : "");
+                }}
+                format={language === "en" ? "MM/DD/YYYY" : "YYYY/MM/DD"}
+              />
+              {errors && errors[name] && errors[name].type === "required" && (
+                //if you want to show an error message
+                <span>your error message !</span>
+              )}
+            </>
+          )}
+        />
+
+
+*************************************************************
+Multi Date Picker -
+
+        <Controller
+          control={control}
+          name="date"
+          render={({
+            field: { onChange, name, value },
+            formState: { errors },
+             }) => (
+            <>
+              <DatePicker
+                value={value || ""}
+                onChange={(date) => {
+                  onChange(date?.isValid ? date : "");
+                }}
+                format={language === "en" ? "MM/DD/YYYY" : "YYYY/MM/DD"}
+              />
+              {errors && errors[name] && errors[name].type === "required" && (
+                //if you want to show an error message
+                <span>your error message !</span>
+              )}
+            </>
+          )}
+        />
+
+        ***************************************************************
+
+<Controller
+  name={"dateInput"}
+  control={control}
+  defaultValue={new Date()}
+  render={({ field: { onChange, value } }) => {
+    return (
+      <DatePicker
+        onChange={onChange}
+        selected={value}
+        placeholderText="Select date"
+      />
+    );
+  }}
+/>
+
+
+*************************************
+From stack overflow .....   June 3, 2021
+
+<Controller
+  name={"birthDate"}
+  control={control}
+  defaultValue={new Date()}
+  rules={{ validate: { isOlderThan2Years } }}
+  render={({ field: { onChange, value } }) => {
+    return (
+      <DatePicker
+        onChange={onChange}
+        selected={value}
+        placeholderText="Enter your birth date"
+      />
+    );
+  }}
+/>
+<ErrorMessage
+  errors={errors}
+  name="birthDate"
+  render={({ message }) => <p>{message}</p>}
+/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

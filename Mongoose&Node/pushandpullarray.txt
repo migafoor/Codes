@@ -1,0 +1,145 @@
+User.update(
+  {'addresses._id': address_id},
+  {$set: {'addresses.$.street': 'Blah'}},
+  function(err, count) { ... });
+*******************************************
+db.collection.update({
+  "_id": 1,
+  "movies._id": 1
+},
+{
+  "$push": {
+    "movies.$.actors": req.body
+  }
+})
+
+**********************************************
+db.users.updateOne( { username: 'bry8dp0h8' },
+{
+  $set: {role: 1}
+})
+
+************************************************************
+db.collection.update({
+  "basicDetails.id": "1"
+},
+
+{
+  "$set": {
+    "tasks.$[tasks].subtasks.$[subtasks].description": "XYZ"
+  }
+},
+
+{
+  "arrayFilters": [
+    {
+      "tasks.id": "10"
+    },
+
+    {
+      "subtasks.id": "120"
+    }
+  ],
+ 
+ multi: true
+})
+*****************************************************
+const tempCar = await Car.findOneAndUpdate(
+      {
+        make: req.params.make,
+      },
+      { $pull: { "models.$[e1].reviews": { _id: req.params._id } } },
+      {
+        arrayFilters: [
+          { "e1.name": req.params.model },
+          { "e2._id": req.params._id },
+        ],
+      }
+    );
+************************************************
+User.findOneAndUpdate(
+        {  _id: "Manasa" },
+        { $push: { "sensors.$[outer].measurements": { "time": req.body.time } } }
+        { "arrayFilters:" [{"outer._id": ObjectId("57da0a4bf3884d1fb2234c74")}]
+    );
+*****************************************************************
+UPDATE ..... $set   array filter
+
+const tempCar = await Car.findOneAndUpdate(
+      {
+        make: req.params.make,
+      },
+      { $set: { "models.$[e1].reviews.$[e2]": result.value } },
+      {
+        arrayFilters: [
+          { "e1.name": req.params.model },
+          { "e2._id": req.params._id },
+        ],
+      }
+    );
+***************************************************
+Delete element from array
+
+const tempCar = await Car.findOneAndUpdate(
+      {
+        make: req.params.make,
+      },
+      { $pull: { "models.$[e1].reviews": { _id: req.params._id } } },
+      {
+        arrayFilters: [
+          { "e1.name": req.params.model },
+          { "e2._id": req.params._id },
+        ],
+      }
+    );
+
+
+const tempCar = await  DeptBody.findOneAndUpdate(
+      {
+        _id: req.params.id,
+      },
+      { $set: { "roles.$[e1]: req.body.newrole } },
+      {
+        arrayFilters: [
+          { "e1.roleName": req.params.model }
+        ],
+      }
+    );
+
+
+
+
+
+
+
+
+
+*******************************************************
+
+63917dde04f5f0b8dd30bce1
+Raphel G.
+
+63920b4504f5f0b8dd30bde8
+Safwan Amir
+
+639e0393f1b01d860b5464bc
+Sajith K
+
+639e0812f1b01d860b5464d7
+Raju CK
+Tech. Assistant
+
+63909cb1570baa63e44e57b3
+Staff
+
+639ebcad52820cd44c88dcad
+Faculty
+
+
+
+
+
+
+
+
+

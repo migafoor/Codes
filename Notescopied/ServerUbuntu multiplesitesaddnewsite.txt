@@ -1,0 +1,206 @@
+
+createuser migafoor
+pw Amnalayan$#2022
+
+New VPS -  IP : 194.233.72.250	
+New VPS – username migafoor   PW  Amnalayan$#2022
+URL : http://194.233.72.250:7800/e6c6a2e9
+username: e8tgbqex
+password: f4e27316
+
+
+IP : 194.233.72.250	
+Pass : pqo0v9xP2xYl8we635d
+
+usermod -aG sudo migafoor
+adduser vivek sudo        #add user with sudo
+id migafoor 
+output : uid=1000(migafoor) gid=1000(migafoor) groups=1000(migafoor),27(sudo)
+sudo addgroup www
+sudo addgroup www-data
+sudo addgroup pm2
+sudo usermod -a -G www,www-data,root,pm2 migafoor
+
+sudo apt update
+sudo apt install nginx
+sudo ufw app list
+sudo ufw allow 'Nginx HTTP'
+sudo ufw status
+systemctl status nginx
+http://194.233.72.250   ******* nginx welcome page will appear
+
+*************************************************************************
+sudo mkdir -p /var/www/guidancekerala.in/html
+sudo chown -R migafoor:www /var/www/guidancekerala.in/html
+sudo chmod -R 755 /var/www/guidancekerala.in
+sudo chown -R $USER:$USER /var/www/guidancekerala.in/html
+sudo chmod -R 755 /var/www/guidancekerala.in/html
+****************************************************************************************
+sudo chown -R migafoor:www /var/www/bishopmoorecollege.ac.in/html
+sudo chmod -R 755 /var/www/bishopmoorecollege.ac.in
+sudo chown -R $USER:$USER /var/www/bishopmoorecollege.ac.in/html
+sudo chmod -R 755 /var/www/bishopmoorecollege.ac.in/html
+sudo chown -R www-data:www-data /var/www/bishopmoorecollege.ac.in/html
+sudo nano /var/www/bishopmoorecollege.ac.in/html/index.html  *****html to serve in domain
+sudo nano /etc/nginx/sites-available/bishopmoorecollege.ac.in      **********server block edit in sites available
+
+{DEFAULT BLOCK OR MODIFIED BLOCK FOR NEW SITE}
+sudo ln -s /etc/nginx/sites-available/bishopmoorecollege.ac.in /etc/nginx/sites-enabled/
+
+
+sudo ln -s /etc/nginx/sites-available/guidancekerala.in /etc/nginx/sites-enabled/
+
+
+sudo chown -R www-data:www-data /var/www/guidancekerala.in/html
+
+
+migafoor:www
+
+sudo nano /var/www/guidancekerala.in/html/index.html  *****html to serve in domain
+
+sudo nano /etc/nginx/sites-available/guidncekerala.in      **********server block edit in sites available
+
+
+sudo ln -s /etc/nginx/sites-available/guidancekerala.in /etc/nginx/sites-enabled/
+sudo nano /etc/nginx/nginx.conf
+sudo ln -s /etc/nginx/sites-available/guidancekerala.in.conf /etc/nginx/sites-enabled/guidancekerala.in.conf
+sudo echo -e "Test">> /etc/nginx/sites-available/guidancekerala.in
+
+sudo chown -R www-data:www-data /etc/nginx/sites-enabled
+sudo chown -R migafoor:www-data /etc/nginx/sites-enabled
+
+curl http://localhost:3000
+	include /etc/nginx/sites-enabled/*;
+
+Amnalayan@2008
+sudo passwd jerry ##
+/etc/passwd
+useradd -g www-data migafoor
+usermod -a -G www-data migafoor
+ls -l /var/www/guidancekerala.in/html
+
+
+sudo ufw enable
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw status
+sudo ufw disable
+ufw app list
+ufw allow 'Nginx HTTP'
+sudo ufw allow 27017
+sudo ufw deny 27017
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+	worker_connections 768;
+	# multi_accept on;
+}
+
+http {
+
+	##
+	# Basic Settings
+	##
+
+	sendfile on;
+	tcp_nopush on;
+	tcp_nodelay on;
+	keepalive_timeout 65;
+	types_hash_max_size 2048;
+	# server_tokens off;
+
+	server_names_hash_bucket_size 64;
+	# server_name_in_redirect off;
+
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
+
+	##
+	# SSL Settings
+	##
+
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+	ssl_prefer_server_ciphers on;
+
+	##
+	# Logging Settings
+	##
+
+	access_log /var/log/nginx/access.log;
+	error_log /var/log/nginx/error.log;
+
+	##
+	# Gzip Settings
+	##
+
+	gzip on;
+
+	# gzip_vary on;
+	# gzip_proxied any;
+	# gzip_comp_level 6;
+	# gzip_buffers 16 8k;
+	# gzip_http_version 1.1;
+	# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+
+	##
+	# Virtual Host Configs
+	##
+
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*.*;
+}
+
+
+#mail {
+#	# See sample authentication script at:
+#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+# 
+#	# auth_http localhost/auth.php;
+#	# pop3_capabilities "TOP" "USER";
+#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+# 
+#	server {
+#		listen     localhost:110;
+#		protocol   pop3;
+#		proxy      on;
+#	}
+# 
+#	server {
+#		listen     localhost:143;
+#		protocol   imap;
+#		proxy      on;
+#	}
+#}
+
+
+sudo nano /var/www/html/index.nginx-debian.html
+sudo nano /etc/nginx/sites-available/default
+
+
+sudo nginx -t
+sudo systemctl status nginx
+sudo systemctl restart nginx
+sudo systemctl stop nginx 
+stop apache server if running
+
+cd /home/bishopmoore/
+cd /home/bishopmoore/bishopmoorebackend
+cd /home/bishopmoore/bishopmoorefrontend
+sudo pm2 start server.js --name bishopmoorebackend
+cd /home/collegesite
+sudo pm2 start npm --name bishopmoorefrontend -- start
+sudo pm2 save
+sudo pm2 status
+
+sudo git clone https://github.com/migafoor/collegesitebackend.git 
+sudo git clone https://github.com/migafoor/collegesite.git bishopmoorefrontend
+
+
+
+
+
+
+
