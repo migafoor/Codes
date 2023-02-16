@@ -24,8 +24,9 @@ sudo mongodump --username=mongoadmin --password=ashalrajaYOB2012 --port 27017 --
 
 sudo mongodump -h 194.233.72.250:27017 -d bishopmoore -u bishopmooreadmin -p adminBishop$2022 --out /var/backups/mongobackups/$(date +'%d-%m-%y')
 
-//worked one ..................
+//worked one ..................  ******************************************
 sudo mongodump --uri="mongodb://mongoadmin:ashalrajaYOB2012@194.233.72.250:27017/?authSource=admin" --db bishopmoore --out /var/backups/mongobackups/$(date +'%d-%m-%y')
+sudo mongodump --uri="mongodb://mongoadmin:ashalrajaYOB2012@194.233.72.250:27017/?authSource=admin" --db guidance --out /var/backups/mongobackups/$(date +'%d-%m-%y')
 
 sudo mongorestore --uri="mongodb://mongoadmin:ashalrajaYOB2012@194.233.72.250:27017/?authSource=admin" --db collegesite  /var/backups/mongobackups/collegesite  
 
