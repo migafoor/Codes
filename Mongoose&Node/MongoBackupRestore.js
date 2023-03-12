@@ -35,3 +35,6 @@ sudo mongorestore --uri="mongodb://mongoadmin:ashalrajaYOB2012@194.233.72.250:27
 //remove collections without loosing users
 use collegesite
 db.getCollectionNames().forEach(function(c) { if (c.indexOf("system.") == -1) db[c].drop(); }
+
+
+

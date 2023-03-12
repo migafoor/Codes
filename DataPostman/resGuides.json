@@ -1,0 +1,20 @@
+
+
+{
+"guideName": { "label": "Mr. Dipu Joseph", "value": "63eb81549b23032bc66ca257" },
+"guideContact":"63eb81549b23032bc66ca257",
+"specialization": "Molicular Biology",
+"resAreas": [],
+"guideJoinDate": "2022-06-22T18:30:00.000Z",
+"resCentre": {"value": "CAFM","label": "CAFM"},
+"resScholars": [],
+"resProjects": [],
+"guideType": { "value": "InternalFacultyGuide", "label": "Internal Faculty Guide" },
+"images": [],
+"files": [],
+"links": [],
+"description": "<p>New Description set</p>",
+"order": 4,
+"guideSeats": 3,
+"userType": {"label": "Faculty", "value": "63b28e64c0a54a1950503362" }
+}

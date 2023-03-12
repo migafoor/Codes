@@ -1,0 +1,41 @@
+        {
+        "scholarName": {"label": "Mathai Kurian", "value": "640de46a3dc3c800058262bc" },
+        "scholarContact":"640de46a3dc3c800058262bc",
+        "resTopic":"Impact of Hubble Telescopes in recent discoveries",
+        "resArea":"Astro Physics",
+        "resJoinDate":"2022-06-22T18:30:00.000Z",
+        "resEndDate":"2022-06-22T18:30:00.000Z",
+        "resCentre" : {"value": "CAFM","label": "CAFM"},
+        "resStatus":{"label": "Pursuing", "value": "Pursuing"},
+        "resGuide":{ "label": "Mr. Dipu Joseph", "value": "63eb81549b23032bc66ca257"},
+        "resProject":"",
+        "resType": {"label": "Full Time", "value": "FullTime"},
+        "IsActive":true,
+        "images": [],
+        "files": [],
+        "links": [],
+        "description": "<p>New Description set</p>",
+        "order":1
+        }
+
+        {
+            "scholarName": {"label": "Shafeeq Aslam", "value": "640de61f3dc3c800058262d1" },
+            "scholarContact":"640de61f3dc3c800058262d1",
+            "resTopic":"Gravity in higher spacetime dimensions",
+            "resArea":"Quantum Physics",
+            "resJoinDate":"2022-06-22T18:30:00.000Z",
+            "resEndDate":"2027-06-21T18:30:00.000Z",
+            "resCentre" : {"value": "CAFM","label": "CAFM"},
+            "resStatus":{"label": "Pursuing", "value": "Pursuing"},
+            "resGuide":{ "label": "Mr. Dipu Joseph", "value": "63eb81549b23032bc66ca257"},
+            "resProject":"",
+            "resType": {"label": "Full Time", "value": "FullTime"},
+            "IsActive":true,
+            "images": [],
+            "files": [],
+            "links": [],
+            "description": "<p>New Description set</p>",
+            "order":1
+            }
+    
+
